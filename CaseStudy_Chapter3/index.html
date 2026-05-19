@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Khám phá toàn diện Chương III: Chủ nghĩa duy vật lịch sử từ Giáo trình Triết học Mác - Lênin MLN111 qua Case Study quản trị thực tế.">
+  <title>Triết học Mác - Lênin MLN111: Chương III - Chủ nghĩa duy vật lịch sử</title>
+  <link rel="stylesheet" href="style.css?v=9.1.6">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Floating leaves/flowers background container -->
+  <div id="falling-flowers-container"></div>
+
+  <!-- Clean structural container -->
+  <div id="scroll-progress"
+    style="position: fixed; top: 0; left: 0; height: 3px; background: var(--accent); width: 0%; z-index: 1001; transition: width 0.1s ease-out;">
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <span class="material-icons" style="color: var(--primary);">account_balance</span>
+      Triết học Mác - Lênin MLN111
+    </div>
+    <div class="nav-links">
+      <a href="#theory">Chương III Lý thuyết</a>
+      <a href="#analysis">Phân tích Case Study</a>
+      <a href="#solutions">Giải pháp Quản trị</a>
+      <a href="#games">Trò chơi Trí tuệ</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="canvas-bg"></canvas>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="pill">
+          <span class="material-icons" style="font-size:16px;">auto_stories</span>
+          Giáo trình chuẩn Bộ GD&ĐT
+        </div>
+        <h1>Chương III: Chủ nghĩa duy vật lịch sử</h1>
+        <p class="hero-sub">Phân tích chuyên sâu các quy luật vận động của xã hội loài người. Chiêm nghiệm thực tiễn qua
+          sự mâu thuẫn biện chứng khi áp dụng văn hóa doanh nghiệp hiện đại vào mô hình sản xuất truyền thống.</p>
+        <div class="hero-cta">
+          <a href="#games" class="btn btn-primary">Chơi Trò chơi Trí tuệ <span class="material-icons"
+              style="font-size: 18px;">videogame_asset</span></a>
+          <a href="#theory" class="btn btn-outline">Xem Bài giảng Chương III <span class="material-icons"
+              style="font-size: 18px;">arrow_downward</span></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/hero.png" alt="Mối quan hệ biện chứng CSHT và KTTT" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM & AGENDA -->
+  <section id="agenda" class="section" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+    <div class="container">
+      <div class="agenda-layout"
+        style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2.5rem; margin-top: 1rem;">
+
+        <!-- Team Members Card -->
+        <div class="card"
+          style="padding: 2.5rem; border: 1px solid rgba(99, 102, 241, 0.2); background: rgba(15, 23, 42, 0.45); backdrop-filter: blur(16px); position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="simulator-scan-line" style="opacity: 0.15;"></div>
+          <div>
+            <div class="section-label" style="margin-bottom: 1rem;">
+              <span class="material-icons" style="font-size:14px;">groups</span> BAN SÁNG TẠO ĐỀ TÀI
+            </div>
+            <h3
+              style="font-family: 'Space Grotesk', sans-serif; font-size: 1.75rem; color: #fff; margin-bottom: 0.5rem;">
+              Nhóm Nghiên Cứu Triết Học</h3>
+            <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem;">Tập thể sinh viên lớp MLN111 ứng
+              dụng tư duy Duy vật lịch sử vào giải quyết mâu thuẫn thực tiễn tại doanh nghiệp sản xuất.</p>
+
+            <div class="member-list" style="display: grid; grid-template-columns: 1fr; gap: 1.2rem;">
+              <!-- Member 1 -->
+              <div class="member-item role-lead">
+                <div class="member-avatar"
+                  style="background: linear-gradient(135deg, var(--primary) 0%, var(--csht) 100%);">N1</div>
+                <div>
+                  <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px; font-weight: 700;">Nguyễn Minh Đức
+                  </h4>
+                  <span
+                    style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Trưởng
+                    nhóm / Thuyết trình slide</span>
+                </div>
+              </div>
+
+              <!-- Member 2 -->
+              <div class="member-item role-theory">
+                <div class="member-avatar"
+                  style="background: linear-gradient(135deg, var(--llsx) 0%, var(--green) 100%);">N2</div>
+                <div>
+                  <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px; font-weight: 700;">Lê Quỳnh Anh</h4>
+                  <span
+                    style="font-size: 0.8rem; color: var(--llsx); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Chuyên
+                    gia phân tích lý luận</span>
+                </div>
+              </div>
+
+              <!-- Member 3 -->
+              <div class="member-item role-dev">
+                <div class="member-avatar"
+                  style="background: linear-gradient(135deg, var(--kttt) 0%, var(--accent) 100%);">N3</div>
+                <div>
+                  <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 2px; font-weight: 700;">Phạm Hoàng Nam</h4>
+                  <span
+                    style="font-size: 0.8rem; color: var(--kttt); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Phát
+                    triển kịch bản & Lập trình mô phỏng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table of Contents (Agenda) Card -->
+        <div class="card"
+          style="padding: 2.5rem; border: 1px solid rgba(13, 148, 136, 0.2); background: rgba(15, 23, 42, 0.45); backdrop-filter: blur(16px); position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="simulator-scan-line" style="opacity: 0.15; animation-delay: 1.5s;"></div>
+          <div>
+            <div class="section-label" style="margin-bottom: 1rem;">
+              <span class="material-icons" style="font-size:14px;">toc</span> MỤC LỤC NGHỊ SỰ
+            </div>
+            <h3
+              style="font-family: 'Space Grotesk', sans-serif; font-size: 1.75rem; color: #fff; margin-bottom: 0.5rem;">
+              Khung Bài Thuyết Trình</h3>
+            <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem;">Lộ trình 5 phần dẫn dắt người nghe
+              qua chiều sâu lý thuyết và tương tác thực tiễn.</p>
+
+            <div class="agenda-timeline">
+              <!-- Item 1 -->
+              <a href="#theory" class="agenda-item">
+                <div class="agenda-dot" style="background: var(--primary);"></div>
+                <h4 style="font-size: 0.95rem; color: #fff; font-weight: 700; margin-bottom: 2px;">I. Bài giảng Lý
+                  thuyết Kinh điển</h4>
+                <p style="font-size: 0.8rem; color: var(--muted); margin: 0;">5 phạm trù cốt lõi của Chủ nghĩa duy vật
+                  lịch sử.</p>
+              </a>
+
+              <!-- Item 2 -->
+              <a href="#analysis" class="agenda-item">
+                <div class="agenda-dot" style="background: var(--llsx);"></div>
+                <h4 style="font-size: 0.95rem; color: #fff; font-weight: 700; margin-bottom: 2px;">II. Phân tích Case
+                  Study Thực tiễn</h4>
+                <p style="font-size: 0.8rem; color: var(--muted); margin: 0;">Mâu thuẫn biện chứng giữa LLSX lò nung
+                  gạch và QHSX.</p>
+              </a>
+
+              <!-- Item 3 -->
+              <a href="#analysis" class="agenda-item">
+                <div class="agenda-dot" style="background: var(--csht);"></div>
+                <h4 style="font-size: 0.95rem; color: #fff; font-weight: 700; margin-bottom: 2px;">III. Chẩn đoán & Cấy
+                  ghép Thượng tầng</h4>
+                <p style="font-size: 0.8rem; color: var(--muted); margin: 0;">Mô phỏng khả năng tương thích LLSX & QHSX
+                  theo mô hình.</p>
+              </a>
+
+              <!-- Item 4 -->
+              <a href="#solutions" class="agenda-item">
+                <div class="agenda-dot" style="background: var(--green);"></div>
+                <h4 style="font-size: 0.95rem; color: #fff; font-weight: 700; margin-bottom: 2px;">IV. Đề xuất Giải pháp
+                  Toàn diện</h4>
+                <p style="font-size: 0.8rem; color: var(--muted); margin: 0;">Thiết lập sự phù hợp và nâng cấp LLSX tự
+                  động hóa.</p>
+              </a>
+
+              <!-- Item 5 -->
+              <a href="#games" class="agenda-item">
+                <div class="agenda-dot" style="background: var(--accent);"></div>
+                <h4 style="font-size: 0.95rem; color: #fff; font-weight: 700; margin-bottom: 2px;">V. Trò chơi Trí tuệ
+                  Tương tác</h4>
+                <p style="font-size: 0.8rem; color: var(--muted); margin: 0;">4 thử thách (Blackjack 21, CEO Simulator,
+                  Drag/Drop).</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THEORY -->
+  <section id="theory" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span class="material-icons" style="font-size:14px;">school</span> 01. BÀI GIẢNG CHUYÊN SÂU CHƯƠNG III
+      </div>
+      <h2 class="section-title">Học thuyết Duy vật Lịch sử Kinh điển</h2>
+      <p class="section-desc">Tìm hiểu cội nguồn sự vận động lịch sử loài người thông qua 5 phạm trù lý thuyết cốt lõi
+        của giáo trình Triết học Mác - Lênin MLN111.</p>
+
+      <div class="card theory-console">
+        <!-- Theory Navigation Tabs -->
+        <div class="theory-tabs">
+          <div class="theory-tab active" data-target="theory-llsx-qhsx">
+            <span class="material-icons">settings</span> LLSX & QHSX
+          </div>
+          <div class="theory-tab" data-target="theory-csht-kttt">
+            <span class="material-icons">factory</span> CSHT & KTTT
+          </div>
+          <div class="theory-tab" data-target="theory-htktxh">
+            <span class="material-icons">layers</span> Hình thái KT-XH
+          </div>
+          <div class="theory-tab" data-target="theory-ttxh-ytxh">
+            <span class="material-icons">psychology</span> TTXH & YTXH
+          </div>
+          <div class="theory-tab" data-target="theory-role">
+            <span class="material-icons">groups</span> Quần chúng & Vĩ nhân
+          </div>
+        </div>
+
+        <!-- PANEL 1: LLSX & QHSX -->
+        <div id="theory-llsx-qhsx" class="theory-panel active">
+          <div class="theory-grid-layout">
+            <div class="theory-header-box" style="border-left: 4px solid var(--llsx);">
+              <h3 style="color: var(--llsx);"><span class="material-icons">settings</span> Biện chứng giữa Lực lượng sản
+                xuất và Quan hệ sản xuất</h3>
+              <p>Đây là quy luật cơ bản nhất quyết định sự vận động và phát triển của mọi phương thức sản xuất xã hội
+                trong lịch sử loài người. Trong đó, sự phát triển không ngừng của LLSX đóng vai trò là động lực gốc rễ.
+              </p>
+            </div>
+            <div class="theory-img-box">
+              <img src="assets/conflict_concept.png" alt="Biện chứng LLSX và QHSX" class="theory-concept-img">
+            </div>
+          </div>
+
+          <div class="structure-grid">
+            <!-- LLSX Detailed Card -->
+            <div class="structural-card glow-teal">
+              <h4><span class="material-icons" style="color: var(--llsx);">engineering</span> Lực lượng sản xuất (LLSX)
+              </h4>
+              <p>Biểu thị mối quan hệ giữa con người với tự nhiên trong quá trình sản xuất. LLSX là nội dung vật chất kỹ
+                thuật mang tính động nhất.</p>
+              <div class="sub-card-list">
+                <div class="sub-card-item" style="border-color: var(--llsx);">
+                  <strong>👤 Người lao động (Yếu tố quyết định)</strong>
+                  <span>Gồm thể lực, trí lực, kinh nghiệm kỹ năng lao động, năng lực sáng tạo và đạo đức nghề nghiệp. Là
+                    lực lượng duy nhất làm sống động tư liệu sản xuất.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: var(--llsx);">
+                  <strong>🛠️ Công cụ lao động (Yếu tố cách mạng nhất)</strong>
+                  <span>Yếu tố động nhất của LLSX, là thước đo trình độ chinh phục tự nhiên của con người và là cơ sở
+                    cốt lõi để phân chia các thời đại kinh tế lịch sử.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: rgba(255,255,255,0.2);">
+                  <strong>📦 Đối tượng & Phương tiện lao động</strong>
+                  <span>Nhà xưởng, kho bãi, nguyên vật liệu và hạ tầng sản xuất kỹ thuật bổ trợ cho công cụ.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- QHSX Detailed Card -->
+            <div class="structural-card glow-teal">
+              <h4><span class="material-icons" style="color: var(--llsx);">handshake</span> Quan hệ sản xuất (QHSX)</h4>
+              <p>Biểu thị quan hệ giữa người với người trong quá trình sản xuất vật chất. QHSX đóng vai trò là hình thức
+                xã hội của sản xuất.</p>
+              <div class="sub-card-list">
+                <div class="sub-card-item" style="border-color: var(--llsx);">
+                  <strong>🔑 Quan hệ Sở hữu tư liệu sản xuất (Quyết định)</strong>
+                  <span>Quan hệ xuất phát, cơ bản, đóng vai trò chi phối và quyết định toàn bộ tính chất của hai mối
+                    quan hệ còn lại trong hệ thống sản xuất.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: rgba(255,255,255,0.2);">
+                  <strong>🤝 Quan hệ Tổ chức & Quản lý lao động</strong>
+                  <span>Quy trình điều hành, phân công lao động chuyên môn hóa và ca kíp quản lý trực tiếp trong xưởng
+                    sản xuất.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: rgba(255,255,255,0.2);">
+                  <strong>💰 Quan hệ Phân phối sản phẩm</strong>
+                  <span>Phương thức ăn chia lợi nhuận, trả lương thưởng và phân bổ phúc lợi cho các tầng lớp lao động xã
+                    hội.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PANEL 2: CSHT & KTTT -->
+        <div id="theory-csht-kttt" class="theory-panel">
+          <div class="theory-grid-layout">
+            <div class="theory-header-box" style="border-left: 4px solid var(--primary);">
+              <h3 style="color: var(--primary);"><span class="material-icons">factory</span> Biện chứng giữa Cơ sở hạ
+                tầng và Kiến trúc thượng tầng</h3>
+              <p>Mối quan hệ biện chứng phản ánh quy luật phát triển giữa cấu trúc kinh tế - xã hội bên dưới làm nền
+                tảng và các hệ tư tưởng chính trị, nhà nước pháp quyền hình thành bên trên để bảo vệ nền tảng kinh tế
+                đó.</p>
+            </div>
+            <div class="theory-img-box" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <img src="assets/csht_concept.png" alt="Cơ sở hạ tầng (Economic Base)" class="theory-concept-img">
+              <img src="assets/kttt_concept.png" alt="Kiến trúc thượng tầng (Superstructure)"
+                class="theory-concept-img">
+            </div>
+          </div>
+
+          <!-- Graphic flow diagram in HTML -->
+          <div class="flow-diagram-container">
+            <div class="flow-node kttt-node">
+              <h4>🏛️ Kiến trúc Thượng tầng (KTTT)</h4>
+              <p>Hệ tư tưởng tinh thần (Chính trị, Pháp luật, Đạo đức, Tôn giáo, Nghệ thuật) và Các thiết chế chính trị
+                - xã hội tương ứng (Nhà nước, Đảng phái, Giáo hội, Đoàn thể).</p>
+            </div>
+
+            <div class="flow-connectors">
+              <div class="flow-arrow-down">
+                <span style="color: var(--primary);">1. Quyết định (CSHT ➔ KTTT)</span>
+                <div class="arrow-line-neon"></div>
+                <span style="font-size:0.75rem; color:var(--muted);">Kinh tế quyết định chính trị; kinh tế đổi thì chính
+                  trị đổi theo.</span>
+              </div>
+              <div class="flow-arrow-down">
+                <span style="color: var(--llsx);">2. Tác động lại (KTTT ➔ CSHT)</span>
+                <div class="arrow-line-neon-reverse"></div>
+                <span style="font-size:0.75rem; color:var(--muted);">Chính trị bảo vệ kinh tế sinh ra nó bằng quyền lực
+                  Nhà nước.</span>
+              </div>
+            </div>
+
+            <div class="flow-node csht-node">
+              <h4>🧱 Cơ sở Hạ tầng (CSHT)</h4>
+              <p>Toàn bộ các Quan hệ sản xuất (gồm QHSX Thống trị giữ vai trò chủ đạo, QHSX Tàn dư của xã hội cũ, QHSX
+                Mầm mống của xã hội mới) hợp thành cơ cấu kinh tế của xã hội.</p>
+            </div>
+          </div>
+
+          <div class="structure-grid">
+            <div class="structural-card glow-indigo">
+              <h4><span class="material-icons" style="color: var(--primary);">account_balance</span> 1. Vai trò quyết
+                định của CSHT</h4>
+              <p>CSHT là gốc rễ kinh tế, quyết định toàn bộ cấu trúc KTTT. Giai cấp nào nắm giữ tư liệu sản xuất chủ đạo
+                trong CSHT sẽ nắm giữ quyền lực nhà nước và hệ tư tưởng chính trị thống trị của KTTT đó.</p>
+            </div>
+            <div class="structural-card glow-indigo">
+              <h4><span class="material-icons" style="color: var(--primary);">shield</span> 2. Tính độc lập & tác động
+                ngược của KTTT</h4>
+              <p>KTTT không thụ động mà bảo vệ CSHT đã sinh ra nó. Trong các bộ phận, <strong>Nhà nước</strong> là thiết
+                chế chính trị mạnh mẽ nhất, tác động trực tiếp và thô bạo nhất vào CSHT thông qua pháp luật và bạo lực.
+              </p>
+            </div>
+          </div>
+
+          <!-- Application Methodology Box -->
+          <div class="methodology-box indigo-theme" style="margin-top: 2rem;">
+            <h5><span class="material-icons" style="color: var(--primary);">tips_and_updates</span> Bài học Quản trị
+              thực tiễn (Ứng dụng Case Study)</h5>
+            <p><strong>Cơ sở kinh tế quyết định Chính sách văn hóa:</strong> Cơ sở hạ tầng của doanh nghiệp chính là hệ
+              thống kinh tế nội bộ, điều kiện làm việc thực tế và thu nhập của công nhân. Các chính sách văn hóa tinh
+              thần (KTTT) muốn thành công bắt buộc phải bắt nguồn và bảo vệ lợi ích vật chất của người lao động. Không
+              thể xây dựng "văn hóa công ty" bay bổng khi chế độ lương thưởng và môi trường sản xuất vật chất cơ bản
+              chưa được đảm bảo tốt.</p>
+          </div>
+        </div>
+
+        <!-- PANEL 3: HÌNH THÁI HÌNH THÁI KT-XH -->
+        <div id="theory-htktxh" class="theory-panel">
+          <div class="theory-grid-layout">
+            <div class="theory-header-box" style="border-left: 4px solid var(--accent);">
+              <h3 style="color: var(--accent);"><span class="material-icons">layers</span> Học thuyết Hình thái Kinh tế
+                - Xã hội</h3>
+              <p>Mô hình lý thuyết toàn diện của C.Mác mô tả xã hội ở từng giai đoạn lịch sử nhất định như một cơ thể
+                sống hoàn chỉnh, vận động tự thân nhờ sự tương thích giữa 3 bộ phận cấu thành.</p>
+            </div>
+            <div class="theory-img-box">
+              <img src="assets/htktxh.png" alt="Mô hình Hình thái Kinh tế - Xã hội" class="theory-concept-img">
+            </div>
+          </div>
+
+          <!-- Custom Stacked Pyramid Diagram in HTML -->
+          <div class="pyramid-container">
+            <div class="pyramid-tier tier-kttt">
+              <h4>🏛️ KIẾN TRÚC THƯỢNG TẦNG</h4>
+              <span>Nhà nước, Luật pháp, Văn hóa, Hệ tư tưởng</span>
+            </div>
+            <div class="pyramid-tier tier-qhsx">
+              <h4>🤝 QUAN HỆ SẢN XUẤT (CSHT)</h4>
+              <span>Quan hệ Sở hữu, Tổ chức quản lý, Phân phối</span>
+            </div>
+            <div class="pyramid-tier tier-llsx">
+              <h4>⚙️ LỰC LƯỢNG SẢN XUẤT</h4>
+              <span>Công cụ lao động, Người lao động có kỹ năng</span>
+            </div>
+          </div>
+
+          <div class="structure-grid">
+            <div class="structural-card glow-amber">
+              <h4><span class="material-icons" style="color: var(--accent);">history</span> Quá trình lịch sử - tự nhiên
+              </h4>
+              <p>Sự thay thế các hình thái kinh tế - xã hội trong lịch sử nhân loại diễn ra theo các quy luật khách quan
+                (như quy luật QHSX phù hợp trình độ LLSX). Quá trình này tự thân vận động và chuyển hóa, độc lập với
+                mong muốn duy ý chí hay ảo tưởng chính trị chủ quan của con người.</p>
+            </div>
+            <div class="structural-card glow-amber">
+              <h4><span class="material-icons" style="color: var(--accent);">biotech</span> Ý nghĩa phương pháp luận
+                khoa học</h4>
+              <p>Muốn nghiên cứu, đánh giá hay cải tạo xã hội (hoặc doanh nghiệp), ta bắt buộc phải đi sâu nghiên cứu
+                <strong>phương thức sản xuất vật chất hiện thực</strong> của nó, thay vì sa đà vào cải tổ các lý thuyết,
+                khẩu hiệu tinh thần sáo rỗng.</p>
+            </div>
+          </div>
+
+          <!-- Application Methodology Box -->
+          <div class="methodology-box amber-theme">
+            <h5><span class="material-icons" style="color: var(--accent);">tips_and_updates</span> Bài học Quản trị thực
+              tiễn (Ứng dụng Case Study)</h5>
+            <p><strong>Tái cấu trúc Doanh nghiệp toàn diện:</strong> Muốn nâng cấp tầng văn hóa sáng tạo (KTTT), doanh
+              nghiệp bắt buộc phải nâng cấp nền tảng vật chất kỹ thuật (LLSX - như robot tự động hóa dây chuyền sản xuất
+              lò gạch) và tái cấu trúc quy trình phân chia lợi ích (QHSX - như cơ chế thưởng Kaizen công bằng). Mọi nỗ
+              lực ép buộc thay đổi tư duy nhân viên từ trên xuống mà không cải tạo phương thức sản xuất bên dưới đều
+              thất bại.</p>
+          </div>
+        </div>
+
+        <!-- PANEL 4: TTXH & YTXH -->
+        <div id="theory-ttxh-ytxh" class="theory-panel">
+          <div class="theory-grid-layout">
+            <div class="theory-header-box" style="border-left: 4px solid var(--green);">
+              <h3 style="color: var(--green);"><span class="material-icons">psychology</span> Tồn tại xã hội & Ý thức xã
+                hội</h3>
+              <p>Mối quan hệ biện chứng mô tả đời sống vật chất khách quan đóng vai trò nền tảng quyết định đời sống
+                tinh thần chủ quan của con người, đồng thời ý thức chủ quan có tính độc lập và sức phản biến mạnh mẽ.
+              </p>
+            </div>
+            <div class="theory-img-box">
+              <img src="assets/ytuc_xh.png" alt="TTXH và YTXH" class="theory-concept-img">
+            </div>
+          </div>
+
+          <div class="structure-grid">
+            <!-- TTXH -->
+            <div class="structural-card glow-emerald">
+              <h4><span class="material-icons" style="color: var(--green);">visibility</span> Tồn tại xã hội (TTXH)</h4>
+              <p>Toàn bộ đời sống vật chất và những điều kiện sinh hoạt vật chất khách quan của xã hội.</p>
+              <div class="sub-card-list">
+                <div class="sub-card-item" style="border-color: var(--green);">
+                  <strong>🏭 Phương thức sản xuất vật chất (Quyết định)</strong>
+                  <span>Cách thức con người tiến hành sản xuất ra của cải vật chất. Là yếu tố quyết định nhất trong sự
+                    sinh tồn và phát triển của xã hội.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: rgba(255,255,255,0.2);">
+                  <strong>🌍 Hoàn cảnh địa lý & Tự nhiên</strong>
+                  <span>Tài nguyên thiên nhiên, khí hậu, môi trường sinh thái bao quanh xã hội.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: rgba(255,255,255,0.2);">
+                  <strong>👥 Dân số & Mật độ phân bổ dân cư</strong>
+                  <span>Quy mô dân số, tốc độ tăng trưởng và sự phân bổ nhân lực lao động.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- YTXH -->
+            <div class="structural-card glow-emerald">
+              <h4><span class="material-icons" style="color: var(--green);">bubble_chart</span> Ý thức xã hội (YTXH)
+              </h4>
+              <p>Toàn bộ đời sống tinh thần, tư tưởng của xã hội phản ánh tồn tại xã hội ở những thời kỳ lịch sử khác
+                nhau.</p>
+              <div class="sub-card-list">
+                <div class="sub-card-item" style="border-color: var(--green);">
+                  <strong>🧠 Tâm lý xã hội (Cấp độ cảm tính)</strong>
+                  <span>Tâm tư, tình cảm, cảm xúc, thói quen thường nhật hình thành trực tiếp từ cuộc sống vật chất hàng
+                    ngày, chưa được hệ thống hóa lý luận.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: var(--green);">
+                  <strong>📚 Hệ tư tưởng xã hội (Cấp độ lý tính)</strong>
+                  <span>Hệ thống các học thuyết chính trị, triết học, đạo đức, khoa học mang tính khái quát lý luận cao,
+                    phản ánh trực tiếp lợi ích giai cấp.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: rgba(255,255,255,0.2);">
+                  <strong>🔄 Tính độc lập tương đối của YTXH</strong>
+                  <span>Ý thức có thể lạc hậu hoặc vượt trước tồn tại vật chất; có tính kế thừa lịch sử; và tác động
+                    ngược mạnh mẽ trở lại đời sống vật chất qua hành động thực tiễn.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Application Methodology Box -->
+          <div class="methodology-box emerald-theme">
+            <h5><span class="material-icons" style="color: var(--green);">tips_and_updates</span> Bài học Quản trị thực
+              tiễn (Ứng dụng Case Study)</h5>
+            <p><strong>Tâm lý người lao động quyết định thành bại:</strong> Tồn tại xã hội của công nhân lò gạch là môi
+              trường làm việc nóng bức, bụi bặm, ô nhiễm và mệt mỏi. Tâm lý xã hội (YTXH) khách quan của họ là mong muốn
+              được an toàn, tăng lương trực tiếp, và có quy chế thưởng phạt công bằng. Ban Giám đốc duy ý chí khi xây
+              dựng khu cà phê thư giãn sang chảnh (phản ánh ý thức xã hội tinh hoa công nghệ) mà bỏ quên nhu cầu cải tạo
+              đời sống vật chất sát sườn của công nhân.</p>
+          </div>
+        </div>
+
+        <!-- PANEL 5: QUẦN CHÚNG & VĨ NHÂN -->
+        <div id="theory-role" class="theory-panel">
+          <div class="theory-grid-layout">
+            <div class="theory-header-box" style="border-left: 4px solid #ec4899;">
+              <h3 style="color: #ec4899;"><span class="material-icons">groups</span> Vai trò của Quần chúng Nhân dân &
+                Vĩ nhân</h3>
+              <p>Quy luật xã hội xác định rõ ràng quần chúng nhân dân đông đảo là lực lượng quyết định cuối cùng dòng
+                chảy lịch sử, trong khi cá nhân kiệt xuất là ngọn cờ dẫn hướng chiến lược.</p>
+            </div>
+            <div class="theory-img-box">
+              <img src="assets/hero.png" alt="Lãnh tụ và quần chúng" class="theory-concept-img"
+                style="filter: hue-rotate(45deg);">
+            </div>
+          </div>
+
+          <div class="structure-grid">
+            <div class="structural-card glow-pink">
+              <h4><span class="material-icons" style="color: #ec4899;">group</span> 1. Vai trò của Quần chúng Nhân dân
+              </h4>
+              <p>Quần chúng nhân dân là chủ thể sáng tạo chân chính ra lịch sử loài người, thể hiện ở 3 khía cạnh cơ
+                bản:</p>
+              <div class="sub-card-list">
+                <div class="sub-card-item" style="border-color: #ec4899;">
+                  <strong>🍞 Sản sinh ra toàn bộ tư liệu vật chất</strong>
+                  <span>Lương thực, máy móc, nhà xưởng nuôi sống và làm cơ sở cho toàn bộ hoạt động tinh thần của xã hội
+                    tồn tại.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: #ec4899;">
+                  <strong>🎨 Sáng tạo ra các giá trị văn hóa tinh thần</strong>
+                  <span>Kinh nghiệm lao động thực tế đúc kết thành tri thức khoa học, nghệ thuật dân gian làm chất liệu
+                    cho các vĩ nhân sáng tạo.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: #ec4899;">
+                  <strong>⚡ Động lực nòng cốt của Cách mạng</strong>
+                  <span>Lực lượng trực tiếp phá vỡ quan hệ sản xuất lạc hậu cũ, thúc đẩy chuyển giao thời đại lịch sử xã
+                    hội.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="structural-card glow-pink">
+              <h4><span class="material-icons" style="color: #ec4899;">stars</span> 2. Vai trò của Lãnh tụ & Vĩ nhân
+              </h4>
+              <p>Là những cá nhân kiệt xuất xuất hiện đúng thời đại lịch sử, đại biểu cho ý chí của quần chúng nhân dân:
+              </p>
+              <div class="sub-card-list">
+                <div class="sub-card-item" style="border-color: #ec4899;">
+                  <strong>🧠 Khái quát đúng đắn quy luật lịch sử</strong>
+                  <span>Phân tích, nhận diện xu thế phát triển khách quan để đưa ra phương án tổ chức chiến lược.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: #ec4899;">
+                  <strong>📢 Tập hợp & Đoàn kết lực lượng đông đảo</strong>
+                  <span>Liên kết các bộ phận quần chúng nhân dân rời rạc thành một khối thống nhất có ý chí đấu tranh tự
+                    giác.</span>
+                </div>
+                <div class="sub-card-item" style="border-color: #ec4899;">
+                  <strong>🧭 Định hướng hành động thực tiễn</strong>
+                  <span>Chèo lái, dẫn đường phong trào cách mạng giải quyết thành công các nhiệm vụ trọng đại của thời
+                    đại.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Application Methodology Box -->
+          <div class="methodology-box pink-theme">
+            <h5><span class="material-icons" style="color: #ec4899;">tips_and_updates</span> Bài học Quản trị thực tiễn
+              (Ứng dụng Case Study)</h5>
+            <p><strong>Người chèo lái và Tập thể lao động:</strong> Một doanh nghiệp muốn thành công cần có sự kết hợp
+              biện chứng hoàn hảo giữa một **Lãnh đạo xuất sắc (CEO/Vĩ nhân)** nhạy bén với thị trường, nắm bắt đúng quy
+              luật kinh doanh và biết cách tập hợp lòng người, cùng với một **Tập thể người lao động (Quần chúng)** đoàn
+              kết, làm việc nỗ lực, được tôn trọng và được phân chia lợi ích xứng đáng. Sự kiêu ngạo của ban lãnh đạo
+              coi thường vai trò của công nhân trực tiếp lò nung sẽ phá nát nhà máy gạch men.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ANALYSIS -->
+  <section id="analysis" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span class="material-icons" style="font-size:14px;">analytics</span> 02. PHÂN TÍCH DIỄN BIẾN CASE STUDY
+      </div>
+      <h2 class="section-title">Sự mâu thuẫn biện chứng tại Nhà máy Gạch men</h2>
+      <p class="section-desc">Hệ thống chẩn đoán biện chứng diễn biến doanh nghiệp. Tự động hóa phân tích mối quan hệ
+        tương tác giữa LLSX, QHSX và KTTT qua các thời kỳ.</p>
+
+      <!-- Case Study Scenario Box -->
+      <div class="methodology-box"
+        style="margin-top: 1.5rem; margin-bottom: 2.5rem; border-left: 4px solid var(--accent); background: rgba(99, 102, 241, 0.05); padding: 1.5rem; border-radius: 0 8px 8px 0;">
+        <h5
+          style="color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; font-weight: 700;">
+          <span class="material-icons">assignment</span> Tình huống trong đề bài (Tóm tắt Case Study)
+        </h5>
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <p style="margin: 0; line-height: 1.6; color: var(--text); font-size: 0.9rem;">
+            <strong>Bối cảnh & Lực lượng sản xuất (LLSX):</strong> Nhà máy gạch men vận hành lò nung cơ khí truyền
+            thống, ca kíp 3 ca khắt khe, điều kiện lao động nóng bức, nặng nhọc và ô nhiễm. Quy chế quản lý, ca kíp cố
+            định và giám sát trực tiếp (QHSX) đang hoạt động ổn định và duy trì năng suất cao.
+          </p>
+          <p
+            style="margin: 0; border-top: 1px dashed rgba(99, 102, 241, 0.2); padding-top: 1rem; line-height: 1.6; color: var(--text); font-size: 0.9rem;">
+            <strong>Cải tổ duy ý chí (Cấy ghép QHSX & KTTT không phù hợp):</strong> Ban Giám đốc sau khi học tập nước
+            ngoài đã quyết định áp đặt mô hình "Văn hóa tự do kiểu Google" (bỏ chấm công vân tay, nới lỏng kỷ luật, tự
+            quản lý thời gian) cho toàn bộ nhà máy, kể cả công nhân lò nung trực tiếp.
+          </p>
+          <p
+            style="margin: 0; border-top: 1px dashed rgba(99, 102, 241, 0.2); padding-top: 1rem; line-height: 1.6; color: var(--text); font-size: 0.9rem;">
+            <strong>Hậu quả biện chứng (Đứt gãy hệ thống):</strong> Do đặc thù lò nung cần sự đồng bộ ca kíp nghiêm
+            ngặt, việc tự do hóa giờ giấc làm công nhân sao lãng. Lò nung bị lệch ca, sốc nhiệt độ gây nứt hỏng gạch, tỷ
+            lệ gạch lỗi vọt lên 50%, năng suất sụt giảm nghiêm trọng, dẫn đến đứt gãy hệ thống sản xuất.
+          </p>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE DIALECTICAL SIMULATOR CARD -->
+      <div class="card simulator-card state-normal" id="dialectic-simulator">
+
+        <!-- Premium Control Header with Select Dropdown -->
+        <div class="simulator-control-header">
+          <div class="control-info">
+            <span class="material-icons control-icon-pulse">science</span>
+            <div class="control-title-area">
+              <span class="control-subtitle">CHẨN ĐOÁN QUY LUẬT BIỆN CHỨNG</span>
+              <h4 class="control-title">Cấy ghép Thượng tầng & Kiểm tra tương thích LLSX</h4>
+            </div>
+          </div>
+          <div class="select-wrapper">
+            <select id="select-culture" class="premium-select"
+              title="Lựa chọn mô hình văn hóa doanh nghiệp để cấy ghép">
+              <option value="normal">🟢 Trạng thái mặc định: Ca kíp truyền thống</option>
+              <option value="google">🔴 Cấy ghép: Văn hóa tự do kiểu Google</option>
+              <option value="military">🟡 Cấy ghép: Văn hóa kỷ luật thép Quân đội</option>
+              <option value="kaizen">🟢 Cấy ghép: Mô hình Kaizen cải tiến Nhật Bản</option>
+              <option value="startup">🔴 Cấy ghép: Mô hình Startup công nghệ linh hoạt</option>
+            </select>
+            <span class="material-icons select-arrow" style="pointer-events: none;">expand_more</span>
+          </div>
+        </div>
+
+        <!-- Main split simulator layout -->
+        <div class="simulator-layout">
+          <!-- Holographic laser scan line & Shockwave ripple overlays -->
+          <div class="simulator-scan-line" id="simulator-scan-line"></div>
+          <div class="simulator-shockwave" id="simulator-shockwave"></div>
+
+          <!-- Left half: Lực lượng sản xuất (Productive Forces) -->
+          <div class="simulator-panel panel-left" id="panel-llsx">
+            <div class="panel-header">
+              <span class="material-icons panel-icon">settings</span>
+              <div class="panel-title-area">
+                <span class="panel-category">Lực Lượng Sản Xuất (LLSX)</span>
+                <h3 class="panel-title">Hệ Thống Lò Nung Cơ Khí</h3>
+              </div>
+              <span class="badge badge-llsx">Nền tảng Vật chất</span>
+            </div>
+
+            <div class="panel-body">
+              <div class="visual-container">
+                <!-- Factory Gear Animation Visual -->
+                <div class="factory-visual" id="factory-visual-element">
+                  <div class="steam-pipes" id="steam-pipes-element">
+                    <span class="steam steam-1"></span>
+                    <span class="steam steam-2"></span>
+                  </div>
+                  <div class="gear-assembly" id="gear-assembly-element">
+                    <span class="material-icons gear gear-lg">settings</span>
+                    <span class="material-icons gear gear-md">settings</span>
+                    <span class="material-icons gear gear-sm">settings</span>
+                  </div>
+                  <div class="fire-pit" id="fire-pit-element">
+                    <div class="flame flame-1"></div>
+                    <div class="flame flame-2"></div>
+                    <div class="flame flame-3"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="specs-box">
+                <div class="spec-row">
+                  <span class="spec-label">Công cụ lao động</span>
+                  <span class="spec-val">Lò nung truyền thống & Dây chuyền cơ khí bán tự động</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Người lao động</span>
+                  <span class="spec-val">Công nhân vận hành trực tiếp, lao động cơ bắp nặng nhọc</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Tính chất vận hành</span>
+                  <span class="spec-val text-green" id="llsx-operating-nature">Yêu cầu đồng bộ ca kíp 3 ca liên tục,
+                    tính kỷ luật sắt</span>
+                </div>
+              </div>
+
+              <div class="panel-status-tag status-normal-tag" id="left-status-tag">🟢 Lò nung cháy đều, dây chuyền chạy
+                ổn định</div>
+            </div>
+          </div>
+
+          <!-- Middle Connection Divider -->
+          <div class="simulator-divider">
+            <div class="divider-flow-line">
+              <div class="pulse-dot" id="simulator-flow-dot"></div>
+            </div>
+
+            <button class="btn-apply" id="btn-apply-culture" title="Nhấp để áp dụng cấy ghép mô hình văn hóa">
+              <span class="material-icons apply-icon" id="divider-node-icon">swap_horiz</span>
+              <span class="apply-text">ÁP DỤNG</span>
+              <div class="btn-apply-glowing" id="btn-apply-glow"></div>
+            </button>
+
+            <div class="divider-flow-line">
+              <div class="pulse-dot" id="simulator-flow-dot-lower"></div>
+            </div>
+          </div>
+
+          <!-- Right half: Văn hóa cấy ghép (QHSX/Superstructure) -->
+          <div class="simulator-panel panel-right" id="panel-culture">
+            <div class="panel-header">
+              <span class="material-icons panel-icon" id="right-panel-icon">verified_user</span>
+              <div class="panel-title-area">
+                <span class="panel-category" id="right-panel-category">Quan Hệ Sản Xuất / Thượng Tầng</span>
+                <h3 class="panel-title" id="right-panel-title">Ca Kíp Truyền Thống</h3>
+              </div>
+              <span class="badge badge-llsx" id="right-panel-badge">Truyền thống</span>
+            </div>
+
+            <div class="panel-body">
+              <div class="visual-container" id="right-visual-container">
+                <div class="culture-visual-standard">
+                  <span class="material-icons standard-shield">verified_user</span>
+                  <div class="standard-tags">
+                    <span class="std-tag">ĐỒNG PHỤC AN TOÀN</span>
+                    <span class="std-tag">CA 3 LIÊN TỤC</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="specs-box" id="right-specs-box">
+                <div class="spec-row">
+                  <span class="spec-label">Phương thức quản lý</span>
+                  <span class="spec-val">Phân cấp rõ ràng, giám sát trực tiếp từ tổ trưởng</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Quy chế kỷ luật</span>
+                  <span class="spec-val">Chấm công nghiêm túc bằng vân tay, bắt buộc bảo hộ</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Đối tượng phù hợp</span>
+                  <span class="spec-val">Dây chuyền cơ khí nặng, đòi hỏi tính đồng bộ thời gian</span>
+                </div>
+              </div>
+
+              <div class="panel-status-tag status-normal-tag" id="right-status-tag">🟢 Đang áp dụng quy chuẩn truyền
+                thống</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Initial Placeholder before Check/Apply (Initially visible) -->
+        <div class="simulator-status-placeholder" id="simulator-status-placeholder"
+          style="margin: 1.5rem 3rem 3rem; padding: 2.25rem; border: 1px dashed var(--border); border-radius: 12px; text-align: center; background: rgba(255, 255, 255, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--shadow-sm); transition: all 0.4s ease;">
+          <span class="material-icons"
+            style="font-size: 2.75rem; color: var(--accent); margin-bottom: 0.75rem; display: inline-block; animation: pulseGlow 2s infinite;">analytics</span>
+          <h4
+            style="font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 800; color: var(--text); letter-spacing: 0.02em; margin: 0;">
+            HỆ THỐNG CHỜ PHÂN TÍCH THÍCH ỨNG BIỆN CHỨNG</h4>
+          <p
+            style="font-size: 0.8rem; color: var(--muted); max-width: 520px; margin: 0.65rem auto 0; line-height: 1.6;">
+            Hãy chọn một mô hình cấy ghép ở trên, sau đó nhấn nút <strong style="color: var(--accent);">"KIỂM TRA THÍCH
+              ỨNG"</strong> hoặc <strong style="color: var(--accent);">"ÁP DỤNG"</strong> để chẩn đoán quy luật QHSX
+            tương thích với LLSX và mở khóa kết quả hiệu năng chi tiết.</p>
+        </div>
+
+        <!-- Bottom status notification bar (Initially hidden) -->
+        <div class="simulator-status-bar" id="simulator-status"
+          style="display: none; animation: slideDownReport 0.5s ease forwards;">
+          <div class="status-header">
+            <div class="status-indicator-dot" id="status-indicator-dot"></div>
+            <h4 class="status-title-text" id="status-title-text">HỆ THỐNG ĐANG HOẠT ĐỘNG BÌNH THƯỜNG</h4>
+          </div>
+
+          <div class="status-content">
+            <p class="status-desc" id="status-desc-text">
+              Quy chế kỷ luật và ca kíp ca 3 liên hoàn phù hợp hoàn hảo với Lực lượng sản xuất (dây chuyền lò nung bán
+              tự động). Quy trình sản xuất diễn ra trơn tru, năng suất ổn định.
+            </p>
+
+            <div class="status-metrics">
+              <div class="metric-item">
+                <div class="metric-meta">
+                  <span class="metric-label">Tính phù hợp Biện chứng (LLSX vs QHSX)</span>
+                  <span class="metric-val text-green" id="metric-fit-val">100% (Phù hợp hoàn hảo)</span>
+                </div>
+                <div class="metric-track">
+                  <div class="metric-fill bg-green" id="metric-fit" style="width: 100%;"></div>
+                </div>
+              </div>
+
+              <div class="metric-item">
+                <div class="metric-meta">
+                  <span class="metric-label">Hiệu suất và Năng suất sản xuất</span>
+                  <span class="metric-val text-green" id="metric-efficiency-val">100% (Tối đa)</span>
+                </div>
+                <div class="metric-track">
+                  <div class="metric-fill bg-green" id="metric-efficiency" style="width: 100%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIMELINE DIỄN BIẾN CASE STUDY -->
+      <div class="card" style="margin-top: 3rem; margin-bottom: 3rem;">
+        <h3
+          style="margin-bottom: 2rem; font-family: 'Cabinet Grotesk', sans-serif; font-size: 1.5rem; color: var(--accent); display: flex; align-items: center; gap: 0.6rem; letter-spacing: -0.02em;">
+          <span class="material-icons" style="color: var(--accent);">timeline</span> Dòng thời gian Diễn biến Case Study
+        </h3>
+
+        <div class="timeline">
+          <!-- Giai đoạn 1 -->
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content" style="background: var(--bg-secondary); border-color: var(--border);">
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                <h4 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 700; color: var(--text);">
+                  Giai đoạn 1: Trạng thái sản xuất ổn định (Truyền thống)
+                </h4>
+                <span class="badge"
+                  style="background: rgba(22, 163, 74, 0.1); color: var(--green); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 700;">HỆ
+                  THỐNG ỔN ĐỊNH</span>
+              </div>
+              <p style="color: var(--muted); line-height: 1.6; margin: 0.5rem 0 0; font-size: 0.875rem;">
+                Lực lượng sản xuất (LLSX) là lò nung gạch cơ khí thủ công, đòi hỏi tính kỷ luật ca kíp 3 ca liên tục cực
+                kỳ đồng bộ. Quan hệ sản xuất (QHSX) tương ứng lúc này là phân công ca kíp cố định, giám sát trực tiếp và
+                kỷ luật chặt chẽ. Hệ thống vận hành trơn tru, năng suất đạt 100% dù điều kiện lao động nặng nhọc.
+              </p>
+            </div>
+          </div>
+
+          <!-- Giai đoạn 2 -->
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content" style="background: var(--bg-secondary); border-color: var(--border);">
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                <h4 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 700; color: var(--text);">
+                  Giai đoạn 2: Áp dụng văn hóa tự do kiểu Google
+                </h4>
+                <span class="badge"
+                  style="background: rgba(37, 99, 236, 0.1); color: var(--accent); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 700;">CẤY
+                  GHÉP DUY Ý CHÍ</span>
+              </div>
+              <p style="color: var(--muted); line-height: 1.6; margin: 0.5rem 0 0; font-size: 0.875rem;">
+                Nhà quản trị quyết định cấy ghép mô hình văn hóa tự do sáng tạo kiểu Google (bỏ chấm công vân tay, nới
+                lỏng kỷ luật). Đây là việc áp đặt một Kiến trúc thượng tầng (KTTT) và QHSX phi tập trung vượt trước
+                trình độ hiện thực của LLSX cơ khí nặng, làm mất đi tính đồng bộ thiết yếu trong vận hành lò nung.
+              </p>
+            </div>
+          </div>
+
+          <!-- Giai đoạn 3 -->
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content" style="background: var(--bg-secondary); border-color: var(--border);">
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                <h4 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 700; color: var(--text);">
+                  Giai đoạn 3: Sự cố lò nung & Đứt gãy sản xuất
+                </h4>
+                <span class="badge"
+                  style="background: rgba(220, 38, 38, 0.1); color: var(--red); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 700;">XUNG
+                  ĐỘT BIỆN CHỨNG</span>
+              </div>
+              <p style="color: var(--muted); line-height: 1.6; margin: 0.5rem 0 0; font-size: 0.875rem;">
+                Công nhân sao lãng ca kíp, lò nung bị sốc nhiệt độ do không có sự phối hợp chặt chẽ giữa các khâu. Tỷ lệ
+                gạch lỗi tăng vọt lên 50%, thiết bị hư hỏng, công nhân mệt mỏi và chán nản. Mâu thuẫn biện chứng sâu sắc
+                giữa LLSX và QHSX bùng nổ, dẫn đến sự sụp đổ dây chuyền sản xuất của nhà máy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIALECTIC VISUAL GALLERY -->
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="assets/llsx_concept_new.png" alt="Lực lượng sản xuất">
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-tag tag-llsx">Lực lượng sản xuất (LLSX)</span>
+            <h4>Trình độ LLSX cơ khí & tự động hóa</h4>
+            <p>Trình độ công cụ sản xuất là điểm xuất phát khách quan của toàn bộ hình thái kinh tế - xã hội. Công cụ
+              càng phức tạp càng yêu cầu trình độ kỹ thuật và tổ chức tương thích.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="assets/qhsx_concept_new.png" alt="Quan hệ sản xuất">
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-tag tag-qhsx">Quan hệ sản xuất (QHSX)</span>
+            <h4>Quan hệ sở hữu & tổ chức quản lý</h4>
+            <p>Hình thức xã hội của quá trình sản xuất thực tiễn. Đóng vai trò mở đường thúc đẩy mạnh mẽ hoặc kìm hãm,
+              đứt gãy sự tiến hóa của LLSX vật chất.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="assets/conflict_concept.png" alt="Mâu thuẫn biện chứng">
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-tag tag-red">Mâu thuẫn Biện chứng</span>
+            <h4>Sự đứt gãy hệ thống do bất tương đồng</h4>
+            <p>Việc áp đặt duy ý chí một thiết chế quản trị KTTT (văn hóa sáng tạo kiểu Google) vượt trước hoặc lệch pha
+              khỏi nền tảng LLSX thực tế dẫn đến xung đột nội tại.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 4rem;">
+        <h3
+          style="margin-bottom: 2rem; font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; color: var(--accent);">
+          Biện chứng chuyên sâu từ Giáo trình MLN111</h3>
+
+        <div class="qa-item">
+          <div class="q-label">
+            <div class="q-num">1</div>
+            Dưới góc độ Quy luật Quan hệ sản xuất phù hợp với trình độ của LLSX, tại sao nhà máy thất bại?
+          </div>
+          <div class="a-content">
+            <p>Trình độ của <strong>Lực lượng sản xuất (LLSX)</strong> ở nhà máy gạch này là bán tự động và thủ công cơ
+              khí nặng, đòi hỏi tính kỷ luật cưỡng chế, làm việc tập thể đồng bộ cao. <strong>Quan hệ sản xuất
+                (QHSX)</strong> ở đây - cụ thể là mặt <em>tổ chức và quản lý lao động</em> - phải mang tính chất chặt
+              chẽ, ca kíp cố định để khớp với dây chuyền lò nung.</p>
+            <p>Việc áp dụng "văn hóa tự do sáng tạo" thực chất là áp đặt một QHSX quản lý phi tập trung vượt trước trình
+              độ hiện thực của LLSX. Sự mâu thuẫn này dẫn đến đứt gãy hệ thống sản xuất.</p>
+          </div>
+        </div>
+
+        <div class="qa-item">
+          <div class="q-label">
+            <div class="q-num">2</div>
+            Thuyết "Tồn tại xã hội quyết định Ý thức xã hội" phản ánh thế nào trong trường hợp này?
+          </div>
+          <div class="a-content">
+            <p>Tồn tại xã hội (đời sống vật chất, phương thức làm việc cơ khí nặng nhọc, ô nhiễm) quy định tâm lý và ý
+              thức lao động của công nhân. Họ mong muốn sự an toàn, thu nhập ổn định và quy chế công bằng hơn là không
+              gian giải trí sang chảnh nhưng không thiết thực.</p>
+            <p>Ban Giám đốc đã duy ý chí khi cho rằng có thể nhập khẩu một "ý thức xã hội mới" (văn hóa sáng tạo tự do
+              tinh hoa công nghệ) mà không cần cải tạo đời sống vật chất và nâng cấp công cụ sản xuất thực tế của người
+              lao động.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section id="solutions" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span class="material-icons" style="font-size:14px;">task_alt</span> 03. ĐỀ XUẤT GIẢI PHÁP TOÀN DIỆN
+      </div>
+      <h2 class="section-title">Thiết lập sự Phù hợp Biện chứng</h2>
+      <p class="section-desc">Làm thế nào để áp dụng đúng đắn bài học triết học Mác - Lênin vào cải tạo tổ chức doanh
+        nghiệp trong thực tế?</p>
+
+      <div class="solutions-grid">
+        <div class="sol-card">
+          <div class="sol-icon" style="background: rgba(13, 148, 136, 0.08); color: var(--llsx);"><span
+              class="material-icons">psychology</span></div>
+          <div>
+            <h4>1. Phân loại Lực lượng sản xuất cốt lõi</h4>
+            <p>Áp dụng "văn hóa Google tự do" độc quyền cho các phòng ban có trình độ LLSX mang tính trí tuệ cá thể hóa
+              (Thiết kế mẫu gạch, R&D, Tiếp thị marketing).</p>
+          </div>
+        </div>
+        <div class="sol-card">
+          <div class="sol-icon" style="background: rgba(79, 70, 229, 0.08); color: var(--primary);"><span
+              class="material-icons">gavel</span></div>
+          <div>
+            <h4>2. Khôi phục kỷ luật an toàn lao động</h4>
+            <p>Đối với bộ phận sản xuất trực tiếp (lò nung cơ khí), bắt buộc khôi phục quy chế kiểm soát giờ giấc nghiêm
+              ngặt để phù hợp với trình độ dây chuyền hiện tại.</p>
+          </div>
+        </div>
+        <div class="sol-card">
+          <div class="sol-icon" style="background: rgba(217, 119, 6, 0.08); color: var(--accent);"><span
+              class="material-icons">trending_up</span></div>
+          <div>
+            <h4>3. Áp dụng Kaizen thay vì Sao chép duy ý chí</h4>
+            <p>Xây dựng phong trào thi đua "Cải tiến liên tục" từ dưới lên. Đây là mô hình KTTT/YTXH phản ánh đúng thực
+              tiễn kinh tế của lao động công nghiệp truyền thống.</p>
+          </div>
+        </div>
+        <div class="sol-card">
+          <div class="sol-icon" style="background: rgba(16, 185, 129, 0.08); color: var(--green);"><span
+              class="material-icons">precision_manufacturing</span></div>
+          <div>
+            <h4>4. Nâng cấp LLSX bằng Tự động hóa</h4>
+            <p>Về lâu dài, muốn nới lỏng kỷ luật và tăng tự do tinh thần cho công nhân, bắt buộc đầu tư Robot tự động
+              hóa lò nung để giải phóng sức lao động vật lý nặng nhọc.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-banner">
+        <div class="result-emoji">💡</div>
+        <div class="result-text">
+          <h3>Kết luận Triết học ứng dụng</h3>
+          <p>Mọi chính sách văn hóa tinh thần (Kiến trúc thượng tầng) muốn thành công bền vững đều bắt buộc phải bắt
+            nguồn và phản ánh chính xác trình độ phát triển của phương thức sản xuất vật chất hiện thực (Cơ sở hạ tầng).
+            Việc rập khuôn lý thuyết hoa mỹ một cách duy ý chí chỉ dẫn đến sự tự phủ định tiêu cực.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMES -->
+  <section id="games" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span class="material-icons" style="font-size:14px;">videogame_asset</span> 04. TRÒ CHƠI TRÍ TUỆ TƯƠNG TÁC
+      </div>
+      <h2 class="section-title">Học qua Trực quan sinh động</h2>
+      <p class="section-desc">Củng cố toàn bộ kiến thức của Chương III: Chủ nghĩa duy vật lịch sử bằng các thử thách trí
+        tuệ cực kỳ sáng tạo và hấp dẫn dưới đây.</p>
+
+      <div class="arcade-console">
+        <div class="game-tabs">
+          <div class="game-tab active" data-target="game1">
+            <span class="material-icons">drag_indicator</span> 1. Phân loại Học thuật
+          </div>
+          <div class="game-tab" data-target="game3">
+            <span class="material-icons">business_center</span> 2. CEO Simulator Biện chứng 3.0 (8 Giai đoạn)
+          </div>
+        </div>
+
+        <!-- GAME 1 -->
+        <div id="game1" class="game-panel active">
+          <h3 style="margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem;">Nhiệm vụ: Phân
+            loại các yếu tố vào đúng danh mục Triết học</h3>
+          <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 1.5rem;">Kéo thả các chip vào đúng các ô
+            tương ứng. Hãy cực kỳ tỉnh táo trước <strong>Bẫy học thuật</strong> đại diện cho Lực lượng sản xuất!</p>
+
+          <div class="classify-items" id="draggable-items">
+            <!-- Items injected by JS -->
+          </div>
+
+          <div class="drop-zones">
+            <div class="drop-zone llsx-zone" id="zone-llsx" data-zone="llsx">
+              <h4>Lực lượng sản xuất (LLSX)</h4>
+              <div class="dropped-items"></div>
+            </div>
+            <div class="drop-zone qhsx-zone" id="zone-qhsx" data-zone="qhsx">
+              <h4>Quan hệ sản xuất (QHSX)</h4>
+              <div class="dropped-items"></div>
+            </div>
+            <div class="drop-zone kttt-zone" id="zone-kttt" data-zone="kttt">
+              <h4>Kiến trúc thượng tầng (KTTT)</h4>
+              <div class="dropped-items"></div>
+            </div>
+          </div>
+          <div id="classify-feedback"></div>
+        </div>
+
+        <!-- GAME 3 (RENAMED TO 2 IN TABS) -->
+        <div id="game3" class="game-panel">
+          <div class="sim-story" id="sim-narrative">
+            Đang tải kịch bản mô phỏng quản trị...
+          </div>
+          <div class="sim-bar-wrap">
+            <div class="sim-bar-item bar-llsx">
+              <div class="sim-bar-label">Trình độ LLSX</div>
+              <div class="sim-bar-track">
+                <div class="sim-bar-fill" id="bar-llsx-fill" style="width: 40%;"></div>
+              </div>
+              <div class="sim-bar-val" id="bar-llsx-val">40%</div>
+            </div>
+            <div class="sim-bar-item bar-qhsx">
+              <div class="sim-bar-label">Sự Phù hợp QHSX</div>
+              <div class="sim-bar-track">
+                <div class="sim-bar-fill" id="bar-qhsx-fill" style="width: 50%;"></div>
+              </div>
+              <div class="sim-bar-val" id="bar-qhsx-val">50%</div>
+            </div>
+            <div class="sim-bar-item bar-ytxh">
+              <div class="sim-bar-label">Tâm lý lao động (YTXH)</div>
+              <div class="sim-bar-track">
+                <div class="sim-bar-fill" id="bar-ytxh-fill" style="width: 40%;"></div>
+              </div>
+              <div class="sim-bar-val" id="bar-ytxh-val">40%</div>
+            </div>
+            <div class="sim-bar-item bar-profit">
+              <div class="sim-bar-label">Doanh thu & Lợi nhuận</div>
+              <div class="sim-bar-track">
+                <div class="sim-bar-fill" id="bar-profit-fill" style="width: 60%;"></div>
+              </div>
+              <div class="sim-bar-val" id="bar-profit-val">60%</div>
+            </div>
+          </div>
+          <div class="sim-choices" id="sim-choices-container">
+            <!-- JS Choices injected -->
+          </div>
+          <div class="sim-outcome" id="sim-feedback"></div>
+
+          <div class="sim-nav">
+            <div class="sim-phase">Giai đoạn quản trị: Tháng <span id="sim-month">1</span> / 8</div>
+            <button class="btn btn-primary" id="btn-sim-next" style="display: none;">Bước tiếp theo <span
+                class="material-icons">fast_forward</span></button>
+          </div>
+
+          <div class="sim-final" id="sim-end-screen">
+            <div class="big-emoji" id="sim-end-icon">🏭</div>
+            <h3 id="sim-end-title">Kết quả Hình thái Doanh nghiệp</h3>
+            <p id="sim-end-desc" style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Bạn đang vận
+              hành nhà máy...</p>
+
+            <!-- Dynamic Group Feedback Box -->
+            <div id="sim-presenters-feedback"
+              style="margin-top: 1.5rem; padding: 1.25rem; background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.2); border-radius: 8px; text-align: left; box-shadow: var(--shadow-sm);">
+              <h5
+                style="color: var(--accent); margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; display: flex; align-items: center; gap: 0.4rem; font-weight: 800; border-bottom: 1px dashed rgba(99, 102, 241, 0.2); padding-bottom: 0.5rem; margin-top: 0;">
+                <span class="material-icons" style="font-size: 18px;">comment</span> ĐÁNH GIÁ TỪ BAN SÁNG TẠO ĐỀ TÀI
+                (NHÓM THUYẾT TRÌNH)
+              </h5>
+              <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.85rem; line-height: 1.5;">
+                <div style="border-left: 2px solid var(--primary); padding-left: 0.75rem;">
+                  <strong style="color: var(--primary);">Nguyễn Minh Đức (Trưởng nhóm):</strong>
+                  <span id="feedback-leader" style="color: var(--text);">Đang chẩn đoán...</span>
+                </div>
+                <div style="border-left: 2px solid var(--green); padding-left: 0.75rem;">
+                  <strong style="color: var(--green);">Lê Quỳnh Anh (Lý luận):</strong>
+                  <span id="feedback-theory" style="color: var(--text);">Đang chẩn đoán...</span>
+                </div>
+                <div style="border-left: 2px solid var(--accent); padding-left: 0.75rem;">
+                  <strong style="color: var(--accent);">Phạm Hoàng Nam (Lập trình):</strong>
+                  <span id="feedback-dev" style="color: var(--text);">Đang chẩn đoán...</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-outline" id="btn-sim-restart" style="margin-top: 1.5rem;">Khởi động lại mô
+              phỏng</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 - Thuyết trình MLN111 Chương III (Triết học Mác - Lênin). Công nghệ thiết kế sáng tạo bởi
+        <strong>Antigravity AI</strong>.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* ── 1. INITIALIZATION ── */
+    // Clean corporate interactions.
+
+    // Scroll Progress Indicator
+    window.addEventListener('scroll', () => {
+      const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      document.getElementById('scroll-progress').style.width = scrollPercent + '%';
+    });
+
+    // Intersection Observer for Smooth Reveal Animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // Trigger once
+        }
+      });
+    }, observerOptions);
+
+    // Apply reveal observer on sections and major cards
+    document.querySelectorAll('.section, .card, .timeline, .solutions-grid, .result-banner').forEach(el => {
+      el.classList.add('reveal');
+      revealObserver.observe(el);
+    });
+
+    // Theory Console Panel Switcher
+    const theoryTabs = document.querySelectorAll('.theory-tab');
+    const theoryPanels = document.querySelectorAll('.theory-panel');
+    theoryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        theoryTabs.forEach(t => t.classList.remove('active'));
+        theoryPanels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.target).classList.add('active');
+      });
+    });
+
+    // Game Navigation Panel Switcher
+    const gameTabs = document.querySelectorAll('.game-tab');
+    const gamePanels = document.querySelectorAll('.game-panel');
+    gameTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        gameTabs.forEach(t => t.classList.remove('active'));
+        gamePanels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.target).classList.add('active');
+      });
+    });    // ── INTERACTIVE DIALECTICAL SIMULATOR ──
+    const selectCulture = document.getElementById('select-culture');
+    const simulatorCard = document.getElementById('dialectic-simulator');
+    const statusTitle = document.getElementById('status-title-text');
+    const statusDesc = document.getElementById('status-desc-text');
+    const metricFit = document.getElementById('metric-fit');
+    const metricFitVal = document.getElementById('metric-fit-val');
+    const metricEfficiency = document.getElementById('metric-efficiency');
+    const metricEfficiencyVal = document.getElementById('metric-efficiency-val');
+
+    // Left panel elements
+    const leftStatusTag = document.getElementById('left-status-tag');
+    const llsxOperatingNature = document.getElementById('llsx-operating-nature');
+
+    // Right panel elements
+    const rightPanelIcon = document.getElementById('right-panel-icon');
+    const rightPanelCategory = document.getElementById('right-panel-category');
+    const rightPanelTitle = document.getElementById('right-panel-title');
+    const rightPanelBadge = document.getElementById('right-panel-badge');
+    const rightVisualContainer = document.getElementById('right-visual-container');
+    const rightSpecsBox = document.getElementById('right-specs-box');
+    const rightStatusTag = document.getElementById('right-status-tag');
+
+    // Divider elements
+    const dividerNodeIcon = document.getElementById('divider-node-icon');
+
+    const simulatorStates = {
+      normal: {
+        cardClass: 'state-normal',
+        leftStatus: '🟢 Lò nung cháy đều, dây chuyền chạy ổn định',
+        leftStatusClass: 'status-normal-tag',
+        rightIcon: 'verified_user',
+        rightCategory: 'Quan Hệ Sản Xuất / Thượng Tầng',
+        rightTitle: 'Ca Kíp Truyền Thống',
+        rightBadge: 'Truyền thống',
+        rightBadgeClass: 'badge-llsx',
+        rightVisual: `
+          <div class="culture-visual-standard">
+            <span class="material-icons standard-shield">verified_user</span>
+            <div class="standard-tags">
+              <span class="std-tag">ĐỒNG PHỤC AN TOÀN</span>
+              <span class="std-tag">CA 3 LIÊN TỤC</span>
+            </div>
+          </div>
+        `,
+        rightSpecs: [
+          { label: 'Phương thức quản lý', val: 'Phân cấp rõ ràng, giám sát trực tiếp từ tổ trưởng' },
+          { label: 'Quy chế kỷ luật', val: 'Chấm công nghiêm túc bằng vân tay, bắt buộc bảo hộ' },
+          { label: 'Đối tượng phù hợp', val: 'Dây chuyền cơ khí nặng, đòi hỏi tính đồng bộ thời gian' }
+        ],
+        rightStatus: '🟢 Đang áp dụng quy chuẩn truyền thống',
+        rightStatusClass: 'status-normal-tag',
+        dividerIcon: 'swap_horiz',
+        statusTitle: 'HỆ THỐNG ĐANG HOẠT ĐỘNG BÌNH THƯỜNG',
+        statusDesc: 'Quy chế kỷ luật và ca kíp ca 3 liên hoàn phù hợp hoàn hảo với Lực lượng sản xuất (dây chuyền lò nung bán tự động). Quy trình sản xuất diễn ra trơn tru, năng suất ổn định.',
+        fitVal: '100% (Phù hợp hoàn hảo)',
+        fitWidth: '100%',
+        fitColor: 'var(--green)',
+        fitValClass: 'metric-val text-green',
+        effVal: '100% (Tối đa)',
+        effWidth: '100%',
+        effColor: 'var(--green)',
+        effValClass: 'metric-val text-green',
+        report: {
+          fit: '100% (Phù hợp)',
+          status: 'ĐỒNG BỘ HOÀN HẢO',
+          fitClass: 'badge-green',
+          statusClass: 'badge-green',
+          colorClass: 'report-green',
+          text: 'Lực lượng sản xuất cơ khí bán tự động đòi hỏi tính đồng bộ ca kíp cực cao để duy trì lửa lò nung liên tục. Quy chế ca kíp truyền thống chính là Quan hệ sản xuất phản ánh chính xác trình độ LLSX này. Do đó, hệ thống tương thích và thích ứng tuyệt đối.'
+        }
+      },
+      google: {
+        cardClass: 'state-conflict',
+        leftStatus: '🔴 Báo động! Dây chuyền rối loạn, lò nung bị tắt',
+        leftStatusClass: 'status-active-tag',
+        rightIcon: 'palette',
+        rightCategory: 'Quan Hệ Sản Xuất / Thượng Tầng',
+        rightTitle: 'Văn Hóa Sáng Tạo Google',
+        rightBadge: 'Tự do tối đa',
+        rightBadgeClass: 'badge-google',
+        rightVisual: `
+          <div class="google-visual">
+            <div class="creative-hub">
+              <span class="material-icons creative-bulb animate-pulse">lightbulb</span>
+              <span class="material-icons creative-sparkle sparkle-1">star</span>
+              <span class="material-icons creative-sparkle sparkle-2">star</span>
+              <span class="material-icons creative-sparkle sparkle-3">star</span>
+            </div>
+            <div class="free-zone">
+              <span class="free-badge">TỰ DO SÁNG TẠO</span>
+              <span class="free-badge">KHÔNG CHẤM CÔNG</span>
+            </div>
+          </div>
+        `,
+        rightSpecs: [
+          { label: 'Phương thức quản lý', val: 'Làm việc linh hoạt, tự quyết định giờ giấc cá nhân' },
+          { label: 'Quy chế kỷ luật', val: 'Bỏ chấm công vân tay, bỏ đồng phục bảo hộ, tự do tối đa' },
+          { label: 'Đối tượng phù hợp', val: 'Nhân sự R&D, thiết kế, công nghệ trí tuệ cá thể hóa' }
+        ],
+        rightStatus: '🔴 Áp dụng thất bại: Xảy ra rối loạn ca kíp',
+        rightStatusClass: 'status-active-tag',
+        dividerIcon: 'flash_on',
+        statusTitle: '⚠️ KHỦNG HOẢNG BIỆN CHỨNG: CẤY GHÉP DUY Ý CHÍ THẤT BẠI!',
+        statusDesc: 'Văn hóa tự do kiểu Google mâu thuẫn gay gắt với LLSX cơ khí nặng đòi hỏi tính đồng bộ thời gian tuyệt đối. Lò nung bị tắt do công nhân đi làm lệch ca, đứt gãy dây chuyền liên tục. Năng suất lao dốc 40%, tai nạn lao động tăng cao!',
+        fitVal: '20% (Xung đột sâu sắc)',
+        fitWidth: '20%',
+        fitColor: 'var(--red)',
+        fitValClass: 'metric-val text-red',
+        effVal: '40% (Trì trệ đứt gãy)',
+        effWidth: '40%',
+        effColor: 'var(--red)',
+        effValClass: 'metric-val text-red',
+        report: {
+          fit: '20% (Cực thấp)',
+          status: 'XUNG ĐỘT SÂU SẮC',
+          fitClass: 'badge-red',
+          statusClass: 'badge-red',
+          colorClass: 'report-red',
+          text: 'Văn hóa tự do sáng tạo kiểu Google là Quan hệ sản xuất quản trị vượt trước quá xa so với trình độ LLSX cơ khí thủ công nặng nhọc. Việc không chấm công khiến dây chuyền lò nung liên tục bị ngắt quãng, gây tổn thất nghiêm trọng. LLSX chưa đủ trình độ tự động hóa để tương thích với tự do tuyệt đối.'
+        }
+      },
+      military: {
+        cardClass: 'state-military',
+        leftStatus: '🟡 Dây chuyền vận hành chuẩn chỉ cơ học, lò nung ổn định',
+        leftStatusClass: 'status-normal-tag',
+        rightIcon: 'military_tech',
+        rightCategory: 'Quan Hệ Sản Xuất / Thượng Tầng',
+        rightTitle: 'Kỷ Luật Thép Quân Đội',
+        rightBadge: 'Kiểm soát tuyệt đối',
+        rightBadgeClass: 'badge-military',
+        rightVisual: `
+          <div class="military-visual">
+            <span class="material-icons military-shield">security</span>
+            <div class="military-orders">
+              <span class="order-badge">MỆNH LỆNH SẮT</span>
+              <span class="order-badge">CHÍNH XÁC TỪNG GIÂY</span>
+            </div>
+          </div>
+        `,
+        rightSpecs: [
+          { label: 'Phương thức quản lý', val: 'Giờ giấc chính xác từng giây, mệnh lệnh phục tùng tuyệt đối' },
+          { label: 'Quy chế kỷ luật', val: 'Kiểm tra chéo liên tục, thưởng phạt cực kỳ nghiêm ngặt' },
+          { label: 'Đối tượng phù hợp', val: 'Lực lượng vũ trang hoặc dây chuyền sản xuất cơ khí dây chuyền' }
+        ],
+        rightStatus: '🟡 Đang áp dụng: Vận hành ổn định nhưng căng thẳng',
+        rightStatusClass: 'status-normal-tag',
+        dividerIcon: 'lock',
+        statusTitle: '🟡 HỆ THỐNG ỔN ĐỊNH CƠ HỌC - THIẾU SỰ SÁNG TẠO',
+        statusDesc: 'Kỷ luật thép duy trì sự đồng bộ hoàn hảo của dây chuyền lò nung. Tuy nhiên, áp lực quá lớn đè nặng lên tâm lý lao động (YTXH bị áp chế). Không có sáng kiến cải tiến, công nhân dễ căng thẳng và rời bỏ tổ chức.',
+        fitVal: '80% (Khớp cơ học)',
+        fitWidth: '80%',
+        fitColor: 'var(--yellow)',
+        fitValClass: 'metric-val text-yellow',
+        effVal: '95% (Ổn định cơ học)',
+        effWidth: '95%',
+        effColor: 'var(--yellow)',
+        effValClass: 'metric-val text-yellow',
+        report: {
+          fit: '80% (Khá cao)',
+          status: 'ỔN ĐỊNH CƠ HỌC',
+          fitClass: 'badge-yellow',
+          statusClass: 'badge-yellow',
+          colorClass: 'report-yellow',
+          text: 'Kỷ luật thép quân đội đóng vai trò cưỡng chế, bảo đảm tính đồng bộ cực cao của dây chuyền ca kíp gạch men. Tuy nhiên, nó kìm hãm tính sáng tạo và tinh thần đổi mới lâu dài của người lao động. Phù hợp về mặt kỹ thuật nhưng thiếu tính nhân văn biện chứng.'
+        }
+      },
+      kaizen: {
+        cardClass: 'state-kaizen',
+        leftStatus: '🟢 Tuyệt vời! Dây chuyền vận hành vượt mức 120%',
+        leftStatusClass: 'status-normal-tag',
+        rightIcon: 'trending_up',
+        rightCategory: 'Quan Hệ Sản Xuất / Thượng Tầng',
+        rightTitle: 'Mô Hình Kaizen Nhật Bản',
+        rightBadge: 'Cải tiến liên tục',
+        rightBadgeClass: 'badge-kaizen',
+        rightVisual: `
+          <div class="kaizen-visual">
+            <span class="material-icons kaizen-chart">insights</span>
+            <div class="kaizen-benefits">
+              <span class="kz-badge">HIẾN KẾ LIÊN TỤC</span>
+              <span class="kz-badge">CHIA SẺ LỢI ÍCH</span>
+            </div>
+          </div>
+        `,
+        rightSpecs: [
+          { label: 'Phương thức quản lý', val: 'Giữ vững kỷ luật lò nung kết hợp đối thoại cởi mở' },
+          { label: 'Quy chế kỷ luật', val: 'Tôn trọng an toàn lao động, khen thưởng sáng kiến nhỏ' },
+          { label: 'Đối tượng phù hợp', val: 'Nhà máy sản xuất hiện đại muốn bứt phá hiệu suất' }
+        ],
+        rightStatus: '🟢 Cấy ghép xuất sắc: Phù hợp biện chứng toàn diện',
+        rightStatusClass: 'status-normal-tag',
+        dividerIcon: 'add_task',
+        statusTitle: '🏆 MÔ HÌNH TOÀN DIỆN: PHÙ HỢP BIỆN CHỨNG HOÀN HẢO!',
+        statusDesc: 'Sự kết hợp tuyệt vời! Vừa đảm bảo tính kỷ luật bắt buộc của dây chuyền lò nung cơ khí (LLSX), vừa giải phóng sức sáng tạo thông qua cải tiến nhỏ (YTXH/KTTT). Công nhân tự giác thi đua, năng suất vượt trội 120%, doanh nghiệp phát triển bền vững!',
+        fitVal: '100% (Tương thích hoàn hảo)',
+        fitWidth: '100%',
+        fitColor: 'var(--green)',
+        fitValClass: 'metric-val text-green',
+        effVal: '120% (Vượt mức tối đa)',
+        effWidth: '100%',
+        effColor: 'var(--green)',
+        effValClass: 'metric-val text-green',
+        report: {
+          fit: '100% (Tuyệt vời)',
+          status: 'PHÙ HỢP HOÀN HẢO',
+          fitClass: 'badge-green',
+          statusClass: 'badge-green',
+          colorClass: 'report-green',
+          text: 'Mô hình cải tiến liên tục Kaizen Nhật Bản tôn trọng tính đồng bộ ca kíp (LLSX hiện tại) nhưng mở đường cho công nhân hiến kế cải tiến nhỏ và chia sẻ lợi ích. Quan hệ sản xuất này mở đường cho LLSX bứt phá giới hạn năng suất vượt mức 120%.'
+        }
+      },
+      startup: {
+        cardClass: 'state-startup',
+        leftStatus: '🔴 Quy trình thay đổi liên tục làm sốc nhiệt lò nung',
+        leftStatusClass: 'status-active-tag',
+        rightIcon: 'rocket_launch',
+        rightCategory: 'Quan Hệ Sản Xuất / Thượng Tầng',
+        rightTitle: 'Startup Công Nghệ Linh Hoạt',
+        rightBadge: 'Linh hoạt cực độ',
+        rightBadgeClass: 'badge-startup',
+        rightVisual: `
+          <div class="startup-visual">
+            <span class="material-icons startup-rocket">rocket_launch</span>
+            <div class="startup-flags">
+              <span class="st-badge">THỬ & SAI</span>
+              <span class="st-badge">THAY ĐỔI LIÊN TỤC</span>
+            </div>
+          </div>
+        `,
+        rightSpecs: [
+          { label: 'Phương thức quản lý', val: 'Thay đổi quy trình liên tục để tối ưu hóa tốc độ thử nghiệm' },
+          { label: 'Quy chế kỷ luật', val: 'Tự do thử sai, chấp nhận rủi ro lớn, phân quyền tự quyết' },
+          { label: 'Đối tượng phù hợp', val: 'Công ty công nghệ phần mềm, sáng tạo sản phẩm mới' }
+        ],
+        rightStatus: '🔴 Áp dụng thất bại: Quy trình thay đổi liên tục gây rối loạn',
+        rightStatusClass: 'status-active-tag',
+        dividerIcon: 'dynamic_feed',
+        statusTitle: '🔴 RỐI LOẠN VẬN HÀNH: PHÁ VỠ CHU KỲ SẢN XUẤT!',
+        statusDesc: 'Quy trình thay đổi liên tục và sự phân quyền tùy ý của mô hình startup phá vỡ tính chu kỳ của lò nung gạch. Lò nung bị sốc nhiệt do không thể thay đổi công thức nung liên tục. Năng suất sụt giảm 50%!',
+        fitVal: '30% (Rất kém)',
+        fitWidth: '30%',
+        fitColor: 'var(--red)',
+        fitValClass: 'metric-val text-red',
+        effVal: '50% (Rối loạn nghiêm trọng)',
+        effWidth: '50%',
+        effColor: 'var(--red)',
+        effValClass: 'metric-val text-red',
+        report: {
+          fit: '30% (Kém thích ứng)',
+          status: 'BẤT TƯƠNG THÍCH',
+          fitClass: 'badge-red',
+          statusClass: 'badge-red',
+          colorClass: 'report-red',
+          text: 'Môi trường startup công nghệ đòi hỏi thay đổi liên tục, thử và sai nhanh. Nhưng lò nung gạch là LLSX cơ khí chịu nhiệt liên tục, không thể thay đổi thông số lò mỗi tuần mà không làm nứt gạch và hỏng lò. Sự linh hoạt quá mức bẻ gãy tính tuần hoàn của quy trình kỹ thuật.'
+        }
+      }
+    };
+
+    let pendingStateKey = 'normal';
+
+    function applySimulatorState(stateKey, isUserAction = false) {
+      const data = simulatorStates[stateKey];
+      if (!data) return;
+
+      // 1. Update card classes
+      simulatorCard.className = `card simulator-card ${data.cardClass}`;
+
+      // 2. Update Left panel status and styles
+      leftStatusTag.textContent = data.leftStatus;
+      leftStatusTag.className = `panel-status-tag ${data.leftStatusClass}`;
+
+      // 3. Update Right panel header info
+      rightPanelIcon.textContent = data.rightIcon;
+      rightPanelCategory.textContent = data.rightCategory;
+      rightPanelTitle.textContent = data.rightTitle;
+      rightPanelBadge.textContent = data.rightBadge;
+      rightPanelBadge.className = `badge ${data.rightBadgeClass}`;
+
+      // 4. Update Right panel visual container
+      rightVisualContainer.innerHTML = data.rightVisual;
+
+      // 5. Update Right panel specs list
+      let specsHtml = '';
+      data.rightSpecs.forEach(spec => {
+        specsHtml += `
+          <div class="spec-row">
+            <span class="spec-label">${spec.label}</span>
+            <span class="spec-val">${spec.val}</span>
+          </div>
+        `;
+      });
+      rightSpecsBox.innerHTML = specsHtml;
+
+      // 6. Update Right panel status tag
+      rightStatusTag.textContent = data.rightStatus;
+      rightStatusTag.className = `panel-status-tag ${data.rightStatusClass}`;
+
+      // 7. Update divider icon
+      if (dividerNodeIcon) dividerNodeIcon.textContent = data.dividerIcon;
+
+      // 8. Update status bar content
+      statusTitle.textContent = data.statusTitle;
+      statusDesc.textContent = data.statusDesc;
+
+      // 9. Update metrics
+      metricFit.style.width = data.fitWidth;
+      metricFit.style.background = data.fitColor;
+      metricFitVal.textContent = data.fitVal;
+      metricFitVal.className = data.fitValClass;
+
+      metricEfficiency.style.width = data.effWidth;
+      metricEfficiency.style.background = data.effColor;
+      metricEfficiencyVal.textContent = data.effVal;
+      metricEfficiencyVal.className = data.effValClass;
+
+      // Show results bar and hide placeholder only on active user action!
+      if (isUserAction) {
+        const placeholder = document.getElementById('simulator-status-placeholder');
+        const simulatorStatus = document.getElementById('simulator-status');
+        if (placeholder) placeholder.style.display = 'none';
+        if (simulatorStatus) {
+          simulatorStatus.style.display = 'block';
+        }
+      }
+    }
+
+    if (selectCulture) {
+      selectCulture.addEventListener('change', (e) => {
+        pendingStateKey = e.target.value;
+        const btnApplyCulture = document.getElementById('btn-apply-culture');
+        if (btnApplyCulture) {
+          btnApplyCulture.classList.add('pending');
+        }
+      });
+    }
+
+    const btnApplyCulture = document.getElementById('btn-apply-culture');
+    if (btnApplyCulture) {
+      btnApplyCulture.addEventListener('click', () => {
+        // Trigger futuristic scan-line sweep and shockwave rings
+        const scanLine = document.getElementById('simulator-scan-line');
+        const shockwave = document.getElementById('simulator-shockwave');
+
+        if (scanLine) {
+          scanLine.classList.remove('scanning');
+          void scanLine.offsetWidth; // Force CSS reflow to restart animation
+          scanLine.classList.add('scanning');
+        }
+
+        if (shockwave) {
+          shockwave.classList.remove('active');
+          void shockwave.offsetWidth; // Force CSS reflow to restart animation
+          shockwave.classList.add('active');
+        }
+
+        // Add futuristic screen glitch/flicker glow transition to panels
+        const panels = document.querySelectorAll('.simulator-panel');
+        panels.forEach(panel => {
+          panel.classList.remove('flicker-transition');
+          void panel.offsetWidth; // Force reflow
+          panel.classList.add('flicker-transition');
+          setTimeout(() => panel.classList.remove('flicker-transition'), 1000);
+        });
+
+        // Delay state updates and the slide-down results panel reveal by 420ms
+        // so it renders in perfect synchrony with the sweeping laser beam!
+        setTimeout(() => {
+          applySimulatorState(pendingStateKey, true);
+        }, 420);
+
+        btnApplyCulture.classList.remove('pending');
+
+        // Dynamic feedback visual ripple/click effect
+        btnApplyCulture.style.transform = 'scale(0.92)';
+        setTimeout(() => {
+          btnApplyCulture.style.transform = '';
+        }, 150);
+      });
+    }
+
+    // Initialize with standard traditional ca kíp
+    applySimulatorState('normal');
+    // Professional Dialectical Social Relation Network (Interactive Canvas Particles)
+    const canvas = document.getElementById('canvas-bg');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    const particles = [];
+    const maxParticles = 65;
+    for (let i = 0; i < maxParticles; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 2 + 1,
+        dx: (Math.random() - 0.5) * 0.35,
+        dy: (Math.random() - 0.5) * 0.35
+      });
+    }
+
+    let mouse = { x: null, y: null };
+    window.addEventListener('mousemove', (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+    window.addEventListener('mouseleave', () => {
+      mouse.x = null;
+      mouse.y = null;
+    });
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Update & Draw Nodes
+      particles.forEach((p, idx) => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(37, 99, 236, 0.15)'; // Faint accent blue
+        ctx.fill();
+
+        p.x += p.dx;
+        p.y += p.dy;
+
+        // Bounce borders
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+
+        // Mouse interaction (subtle attraction)
+        if (mouse.x && mouse.y) {
+          const mDist = Math.hypot(p.x - mouse.x, p.y - mouse.y);
+          if (mDist < 180) {
+            p.x += (mouse.x - p.x) * 0.01;
+            p.y += (mouse.y - p.y) * 0.01;
+          }
+        }
+
+        // Draw dialectic connection lines (Social Relations network)
+        for (let j = idx + 1; j < particles.length; j++) {
+          const p2 = particles[j];
+          const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+          if (dist < 130) {
+            const alpha = (1 - (dist / 130)) * 0.06;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.strokeStyle = `rgba(37, 99, 236, ${alpha})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      });
+
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    /* ── GAME 1: DRAG & DROP PHÂN LOẠI ── */
+    const classifyData = [
+      { id: 'c1', text: 'Robot tự động gắp gạch', type: 'llsx', desc: 'Công cụ lao động của Lực lượng sản xuất (LLSX).' },
+      { id: 'c2', text: 'Kỹ sư vận hành lò nung', type: 'llsx', desc: 'Người lao động có tri thức kỹ thuật của LLSX.' },
+      { id: 'c3', text: 'Chế độ trả lương sản phẩm', type: 'qhsx', desc: 'Quan hệ phân phối sản phẩm lao động thuộc QHSX.' },
+      { id: 'c4', text: 'Quy trình ca kíp liên hoàn', type: 'qhsx', desc: 'Quan hệ tổ chức và quản lý sản xuất thuộc QHSX.' },
+      { id: 'c5', text: 'Ban Giám đốc & Quy chế nhà máy', type: 'kttt', desc: 'Thiết chế quản trị hành chính nội bộ thuộc KTTT.' },
+      { id: 'c6', text: 'Văn hóa tự do sáng tạo', type: 'kttt', desc: 'Quan điểm tư tưởng, tâm lý tinh thần của tổ chức thuộc KTTT.' }
+    ];
+
+    let correctCount = 0;
+    let selectedChip = null;
+    const dragContainer = document.getElementById('draggable-items');
+
+    function initGame1() {
+      dragContainer.innerHTML = '';
+      document.querySelectorAll('.dropped-items').forEach(d => d.innerHTML = '');
+      document.getElementById('classify-feedback').style.display = 'none';
+      correctCount = 0;
+      selectedChip = null;
+
+      [...classifyData].sort(() => Math.random() - 0.5).forEach(item => {
+        const el = document.createElement('div');
+        el.className = 'classify-chip';
+        el.draggable = true;
+        el.textContent = item.text;
+        el.dataset.id = item.id;
+        el.dataset.type = item.type;
+        el.dataset.desc = item.desc;
+
+        // Desktop Drag event
+        el.addEventListener('dragstart', (e) => {
+          e.dataTransfer.setData('text/plain', item.id);
+          setTimeout(() => el.classList.add('dragging'), 0);
+        });
+        el.addEventListener('dragend', () => el.classList.remove('dragging'));
+
+        // Mobile tap selection
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          document.querySelectorAll('.classify-chip').forEach(c => c.style.borderColor = 'rgba(226,232,240,0.8)');
+          if (selectedChip === el) {
+            selectedChip = null;
+          } else {
+            selectedChip = el;
+            el.style.borderColor = 'var(--primary)';
+          }
+        });
+
+        dragContainer.appendChild(el);
+      });
+    }
+    initGame1();
+
+    function handleDrop(zone, chipId) {
+      const chipEl = document.querySelector(`.classify-chip[data-id="${chipId}"]`);
+      if (!chipEl) return;
+
+      const type = chipEl.dataset.type;
+      const desc = chipEl.dataset.desc;
+      const targetZone = zone.dataset.zone;
+
+      const droppedEl = document.createElement('div');
+      droppedEl.className = 'dropped-chip ' + (type === targetZone ? 'correct-chip' : 'wrong-chip');
+      droppedEl.innerHTML = `<strong>${chipEl.textContent}</strong><br><span style="font-size: 0.72rem; opacity: 0.95;">${desc}</span>`;
+
+      zone.querySelector('.dropped-items').appendChild(droppedEl);
+      chipEl.remove();
+
+      if (type === targetZone) correctCount++;
+
+      if (document.querySelectorAll('.classify-chip').length === 0) {
+        const fb = document.getElementById('classify-feedback');
+        fb.style.display = 'block';
+        if (correctCount === classifyData.length) {
+          fb.className = 'feedback-win';
+          fb.innerHTML = '🎉 Tuyệt hảo! Bạn đã xuất sắc phân biệt được LLSX, QHSX và KTTT trong mô hình doanh nghiệp thực tế!';
+        } else {
+          fb.className = 'feedback-lose';
+          fb.innerHTML = `Bạn trả lời đúng ${correctCount}/${classifyData.length} yếu tố. Hãy xem lại cấu trúc học thuyết và thử lại nhé! <button onclick="initGame1()" class="btn btn-outline" style="padding: 4px 10px; font-size: 11px; margin-left: 10px;">Thử lại</button>`;
+        }
+      }
+    }
+
+    document.querySelectorAll('.drop-zone').forEach(zone => {
+      zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('drag-over'); });
+      zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+      zone.addEventListener('drop', e => {
+        e.preventDefault();
+        zone.classList.remove('drag-over');
+        const id = e.dataTransfer.getData('text/plain');
+        handleDrop(zone, id);
+      });
+      zone.addEventListener('click', () => {
+        if (selectedChip) {
+          handleDrop(zone, selectedChip.dataset.id);
+          selectedChip = null;
+        }
+      });
+    });
+
+
+
+    /* ── GAME 3: CEO SIMULATOR 2.0 ── */
+    let simState = { llsx: 40, qhsx: 50, ytxh: 40, prof: 60, month: 1 };
+
+    const simScenarios = [
+      {
+        story: "Tháng 1: Nhà máy gạch men đang chạy lò nung cơ khí thủ công. Công nhân phàn nàn vì nóng bức, mệt mỏi và ca kíp quá gắt gao. Bạn quyết định cải tạo Quan hệ quản lý (QHSX) thế nào?",
+        choices: [
+          { text: "Bỏ hoàn toàn chấm công, cho phép công nhân tự do đi làm linh hoạt theo ý muốn.", l:0, q:-35, y:20, f:-25, out: "Thất bại thảm hại! Dây chuyền cơ khí yêu cầu đồng bộ. Công nhân đi làm lệch giờ dẫn đến lò nung bị tắt, đứt ca, năng suất sụt giảm nghiêm trọng.", type:"bad" },
+          { text: "Siết chặt kỷ luật, lắp camera phạt nặng bất cứ ai đi muộn hoặc không mặc đồ bảo hộ.", l:5, q:10, y:-20, f:10, out: "Năng suất được bảo toàn nhưng tâm lý công nhân u uất, bắt đầu xuất hiện tình trạng đình công ngầm phá hoại máy móc.", type:"neutral" },
+          { text: "Giữ vững kỷ luật ca kíp, nhưng tăng tiền thưởng hiệu suất và bổ sung sữa chống độc cho công nhân lò nung.", l:5, q:20, y:25, f:5, out: "Hợp lý! QHSX quản lý được củng cố bằng đòn bẩy lợi ích vật chất, kích thích tâm lý lao động tích cực phản ánh đúng TTXH.", type:"good" }
+        ]
+      },
+      {
+        story: "Tháng 2: Lò nung nhiệt độ cao liên tục gặp sự cố lỗi gạch cong vênh do công nhân thiếu tập trung. Bạn áp dụng giải pháp Kiến trúc thượng tầng (văn hóa) nào?",
+        choices: [
+          { text: "Cho phép công nhân vừa nung gạch vừa đeo tai nghe nhạc giải trí cho thoải mái tinh thần.", l:-10, q:-20, y:20, f:-30, out: "Tai nạn lao động xảy ra do thiếu tập trung cạnh nhiệt độ lò nung cực cao! Dây chuyền bị thanh tra đình chỉ sản xuất.", type:"bad" },
+          { text: "Phát động phong trào thi đua 'Cải tiến Kaizen' - phát hiện và xử lý lỗi kỹ thuật sẽ nhận thưởng nóng trước tập thể.", l:10, q:15, y:25, f:15, out: "Xuất sắc! Ý thức xã hội tích cực (phong trào thi đua) đã tác động ngược lại cực tốt giúp nâng cao trình độ LLSX và tăng lợi nhuận.", type:"good" }
+        ]
+      },
+      {
+        story: "Tháng 3: Doanh nghiệp tích lũy được một khoản thặng dư vốn lớn. Bạn quyết định sử dụng nguồn tài lực này thế nào?",
+        choices: [
+          { text: "Xây dựng khu vui chơi, máy chơi game PS5 và bàn bida sát cạnh lò nung gạch men cho công nhân giải trí.", l:0, q:5, y:25, f:-20, out: "Duy ý chí! Công nhân sau ca lò nóng bức mệt lả không hề hào hứng chơi game cạnh tiếng ồn cơ khí. Đầu tư lãng phí.", type:"neutral" },
+          { text: "Mua sắm Robot gắp gạch tự động và dây chuyền lò nung thông minh tự động hóa (Nâng cấp LLSX vật chất).", l:40, q:15, y:10, f:25, out: "Đỉnh cao tư duy Duy vật lịch sử! Nâng cấp LLSX kỹ thuật trước. Công nhân được giải phóng sức lao động nặng nhọc, mở đường cho QHSX nới lỏng kỷ luật sau này.", type:"good" }
+        ]
+      },
+      {
+        story: "Tháng 4: Sau khi đầu tư Robot tự động hóa thành công, trình độ sản xuất đã thay đổi. Bạn thực hiện bước đi tiếp theo như thế nào?",
+        choices: [
+          { text: "Giữ nguyên kỷ luật vắt kiệt sức lao động như cũ để tối đa hóa thặng dư tư bản.", l:-5, q:-15, y:-30, f:15, out: "Mâuthuẫn bùng nổ! Robot làm việc thay sức người nhưng công nhân vẫn bị giám sát hà khắc. Họ đình công quy mô lớn.", type:"bad" },
+          { text: "Tách đôi nhà máy: Phòng R&D/Thiết kế được tự do sáng tạo; bộ phận cơ khí được giảm giờ làm, tăng ca đào tạo Robot.", l:10, q:25, y:30, f:20, out: "Thành công vang dội! Thiết lập sự phù hợp biện chứng hoàn hảo giữa LLSX hiện đại và QHSX năng động. Nhà máy đạt hiệu suất kỷ lục!", type:"good" }
+        ]
+      },
+      {
+        story: "Tháng 5: Sau khi lắp đặt dây chuyền tự động hóa, công nhân vận hành lúng túng với bảng điều khiển cảm ứng và cánh tay robot mới, gây ra một vài lỗi dừng chuyền. Bạn xử lý thế nào để nâng cao trình độ LLSX?",
+        choices: [
+          { text: "Phạt tiền nặng các lỗi vận hành để ép công nhân tự tìm hiểu.", l:-5, q:-10, y:-25, f:-15, out: "Tâm lý u uất, công nhân giấu lỗi, máy móc hỏng hóc nặng thêm do không được bảo trì kịp thời.", type:"bad" },
+          { text: "Mở lớp đào tạo kỹ thuật miễn phí, cử kỹ sư hướng dẫn trực tiếp và cấp chứng chỉ nâng bậc lương sau khóa học.", l:20, q:15, y:25, f:10, out: "Tuyệt vời! Ý thức nâng cao trình độ trở thành động lực phát triển LLSX vật chất. Công nhân hào hứng làm chủ công nghệ.", type:"good" }
+        ]
+      },
+      {
+        story: "Tháng 6: Do sản phẩm đạt chất lượng cao nhờ robot, bạn muốn quảng bá thương hiệu. Cổ đông đề xuất chi 80% lợi nhuận xây dựng Tượng đài hoành tráng tri ân ngành gốm sứ ngay cổng nhà máy trong khi nhà ăn công nhân đang dột nát.",
+        choices: [
+          { text: "Xây tượng đài hoành tráng để phô diễn Kiến trúc thượng tầng văn hóa trước.", l:0, q:-10, y:-20, f:-25, out: "Duy ý chí! Tượng đài không mang lại lợi ích vật chất sát sườn. Nhà ăn dột nát làm công nhân bất bình, năng suất giảm.", type:"bad" },
+          { text: "Sửa sang nhà ăn khang trang sạch sẽ, làm bảng vinh danh công nhân xuất sắc, phần còn lại tái đầu tư R&D.", l:10, q:20, y:30, f:15, out: "Tuyệt hảo! Cơ sở hạ tầng (đời sống vật chất) được đảm bảo vững chắc làm nền móng nâng đỡ Kiến trúc thượng tầng tinh thần phát triển.", type:"good" }
+        ]
+      },
+      {
+        story: "Tháng 7: Hiệu suất tăng vượt cấp dẫn đến dư thừa nhân sự ở bộ phận lao động tay chân cũ. Trưởng phòng nhân sự đề xuất sa thải hàng loạt ngay lập tức để tối ưu chi phí.",
+        choices: [
+          { text: "Sa thải ngay lập tức 50 công nhân thủ công để tối đa lợi nhuận ngắn hạn.", l:-10, q:-20, y:-40, f:10, out: "Khủng hoảng nhân sự! Công nhân đình công toàn nhà máy để bảo vệ đồng nghiệp. Năng suất lao động rơi tự do.", type:"bad" },
+          { text: "Thành lập bộ phận thiết kế nghệ thuật mới, đào tạo số công nhân cũ sang làm việc và phân phối sáng tạo gốm sứ độc bản.", l:15, q:25, y:35, f:20, out: "Tầm vóc vĩ nhân! Lãnh đạo biết tập hợp và bảo vệ lợi ích quần chúng nhân dân. Doanh nghiệp mở rộng quy mô sản xuất sáng tạo.", type:"good" }
+        ]
+      },
+      {
+        story: "Tháng 8: Một tập đoàn công nghệ gốm sứ đa quốc gia đề xuất mua lại 51% cổ phần nhà máy để biến nhà máy thành gia công vệ tinh chuyên sản xuất gạch thô giá rẻ.",
+        choices: [
+          { text: "Bán ngay để lấy một cục tiền lớn ngắn hạn cho ban quản trị.", l:-20, q:-30, y:-30, f:-40, out: "Đánh mất độc lập! Doanh nghiệp bị hạ cấp từ tự chủ công nghệ xuống gia công giá rẻ, kìm hãm hoàn toàn LLSX sáng tạo dài hạn.", type:"bad" },
+          { text: "Từ chối bán cổ phần chi phối, ký hợp đồng liên doanh chuyển giao công nghệ lõi, tự chủ thiết kế và phân phối thương hiệu Việt ra thế giới.", l:30, q:25, y:30, f:30, out: "Bước nhảy vọt lịch sử! Doanh nghiệp vươn lên nấc thang mới trong phân công lao động quốc tế, khẳng định sự phát triển vượt bậc của LLSX.", type:"good" }
+        ]
+      }
+    ];
+
+    function updateSimBars() {
+      simState.llsx = Math.max(0, Math.min(100, simState.llsx));
+      simState.qhsx = Math.max(0, Math.min(100, simState.qhsx));
+      simState.ytxh = Math.max(0, Math.min(100, simState.ytxh));
+      simState.prof = Math.max(0, Math.min(100, simState.prof));
+
+      document.getElementById('bar-llsx-fill').style.width = simState.llsx + '%';
+      document.getElementById('bar-llsx-val').textContent = simState.llsx + '%';
+
+      document.getElementById('bar-qhsx-fill').style.width = simState.qhsx + '%';
+      document.getElementById('bar-qhsx-val').textContent = simState.qhsx + '%';
+
+      document.getElementById('bar-ytxh-fill').style.width = simState.ytxh + '%';
+      document.getElementById('bar-ytxh-val').textContent = simState.ytxh + '%';
+
+      document.getElementById('bar-profit-fill').style.width = simState.prof + '%';
+      document.getElementById('bar-profit-val').textContent = simState.prof + '%';
+    }
+
+    function renderSimScenario() {
+      const choicesWrap = document.getElementById('sim-choices-container');
+      const feedbackEl = document.getElementById('sim-feedback');
+      const btnNext = document.getElementById('btn-sim-next');
+
+      if (simState.month > simScenarios.length || simState.prof <= 0) {
+        finishSim();
+        return;
+      }
+
+      document.getElementById('sim-month').textContent = simState.month;
+      const scene = simScenarios[simState.month - 1];
+      document.getElementById('sim-narrative').textContent = scene.story;
+
+      choicesWrap.innerHTML = '';
+      feedbackEl.style.display = 'none';
+      btnNext.style.display = 'none';
+
+      scene.choices.forEach(choice => {
+        const btn = document.createElement('button');
+        btn.className = 'sim-choice';
+        btn.innerHTML = `<span class="choice-icon">⚡</span> ${choice.text}`;
+
+        btn.onclick = () => {
+          choicesWrap.querySelectorAll('button').forEach(b => b.disabled = true);
+          simState.llsx += choice.l;
+          simState.qhsx += choice.q;
+          simState.ytxh += choice.y;
+          simState.prof += choice.f;
+          updateSimBars();
+
+          feedbackEl.style.display = 'block';
+          feedbackEl.className = 'sim-outcome outcome-' + choice.type;
+          feedbackEl.innerHTML = `<strong>Kết quả thực tế:</strong> ${choice.out}`;
+
+          if (simState.prof <= 0) {
+            btnNext.textContent = 'Phá sản cuộc chơi';
+          } else {
+            btnNext.textContent = simState.month === simScenarios.length ? 'Xem kết quả chung cuộc' : 'Tiếp tục giai đoạn sau';
+          }
+          btnNext.style.display = 'block';
+        };
+        choicesWrap.appendChild(btn);
+      });
+    }
+
+    document.getElementById('btn-sim-next').onclick = () => {
+      simState.month++;
+      renderSimScenario();
+    };
+
+    function finishSim() {
+      document.getElementById('sim-choices-container').innerHTML = '';
+      document.getElementById('sim-feedback').style.display = 'none';
+      document.getElementById('btn-sim-next').style.display = 'none';
+      document.getElementById('sim-narrative').style.display = 'none';
+
+      const endScreen = document.getElementById('sim-end-screen');
+      const endIcon = document.getElementById('sim-end-icon');
+      const endTitle = document.getElementById('sim-end-title');
+      const endDesc = document.getElementById('sim-end-desc');
+
+      const fbLeader = document.getElementById('feedback-leader');
+      const fbTheory = document.getElementById('feedback-theory');
+      const fbDev = document.getElementById('feedback-dev');
+
+      endScreen.style.display = 'block';
+
+      if (simState.prof <= 0) {
+        endIcon.textContent = '💀';
+        endTitle.textContent = 'Phá sản doanh nghiệp!';
+        endDesc.textContent = 'Lỗi nghiêm trọng! Bạn đã duy ý chí khi tách rời LLSX và QHSX, làm mất cân đối lợi nhuận và phá vỡ cấu trúc kinh tế nền tảng (CSHT).';
+        fbLeader.textContent = 'Chiến lược quản trị quá nóng vội! Bạn đã bỏ qua tính đồng bộ ca kíp làm nhà máy mất khả năng kiểm soát.';
+        fbTheory.textContent = 'Đây là sai lầm điển hình của chủ nghĩa duy tâm chủ quan. Bạn áp đặt KTTT (văn hóa tự do) một cách duy ý chí khi CSHT (lò nung cơ khí) chưa sẵn sàng.';
+        fbDev.textContent = 'Mã nguồn hệ thống báo lỗi 500! Dây chuyền sản xuất bị sập do số liệu hiệu năng sụt giảm về 0%.';
+      } else if (simState.llsx >= 70 && simState.qhsx >= 70) {
+        endIcon.textContent = '🏆';
+        endTitle.textContent = 'Kiến tạo Hình thái Doanh nghiệp xuất sắc!';
+        endDesc.textContent = `Tuyệt vời! Bạn đã đưa LLSX đạt ${simState.llsx}% và sự phù hợp QHSX đạt ${simState.qhsx}%. Bạn đã áp dụng chuẩn học thuyết Duy vật lịch sử, tự động hóa thành công và giải phóng người lao động!`;
+        fbLeader.textContent = 'Xuất sắc! Sự phối hợp nhịp nhàng giữa nâng cấp công nghệ và đòn bẩy vật chất đã tạo nên hình thái doanh nghiệp lý tưởng.';
+        fbTheory.textContent = 'Một minh chứng hoàn hảo cho quy luật QHSX phù hợp với trình độ phát triển của LLSX! Nâng cấp Robot trước rồi nới lỏng quản lý sau là cực kỳ chuẩn xác.';
+        fbDev.textContent = 'Tuyệt vời! Bạn đã đạt điểm số tối đa trong hệ thống kiểm tra tương thích biện chứng!';
+      } else {
+        endIcon.textContent = '🏭';
+        endTitle.textContent = 'Doanh nghiệp vận hành trung bình';
+        endDesc.textContent = `Nhà máy vẫn hoạt động nhưng hiệu suất chưa cao. Hãy chú ý nâng cấp LLSX đồng bộ với cải tạo QHSX để tạo ra bước nhảy vọt!`;
+        fbLeader.textContent = 'Vận hành ổn định nhưng chưa có tính đột phá chiến lược. Cần mạnh dạn đầu tư công nghệ.';
+        fbTheory.textContent = 'Mặc dù QHSX không xung đột nhưng trình độ LLSX cơ khí vẫn kìm hãm quy mô phát triển kinh tế của doanh nghiệp.';
+        fbDev.textContent = 'Hệ thống đang chạy ở mức an toàn. Nếu bạn đầu tư nâng cấp Robot ở tháng thứ 3, bạn sẽ mở khóa được hình thái xuất sắc.';
+      }
+    }
+
+    document.getElementById('btn-sim-restart').onclick = () => {
+      simState = { llsx: 40, qhsx: 50, ytxh: 40, prof: 60, month: 1 };
+      updateSimBars();
+      document.getElementById('sim-end-screen').style.display = 'none';
+      document.getElementById('sim-narrative').style.display = 'block';
+      renderSimScenario();
+    };
+
+    updateSimBars();
+    renderSimScenario();
+
+
+
+    /* ── HISTORICAL MATERIALISM SYMBOLIC PARTICLES ── */
+    function initTheoryParticles() {
+      const container = document.getElementById('falling-flowers-container');
+      if (!container) return;
+
+      // Symbols representing Historical Materialism & Industrial Production
+      const symbols = ['⚙️', '⚒️', '⭐', '💡', '📖', '⚛️', '☭'];
+      const colors = ['#da251d', '#ffcd00', '#3b82f6', '#10b981', '#8b5cf6', '#ec4899'];
+      const particleCount = 22;
+
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'theory-particle';
+
+        const symbol = symbols[Math.floor(Math.random() * symbols.length)];
+        const size = Math.random() * 14 + 14; // Size between 14px and 28px
+        const left = Math.random() * 100;
+        const duration = Math.random() * 10 + 10; // Elegant slow drift (10s to 20s)
+        const delay = Math.random() * -20;
+        const color = colors[Math.floor(Math.random() * colors.length)];
+
+        particle.innerHTML = symbol;
+        particle.style.fontSize = size + 'px';
+        particle.style.left = left + '%';
+        particle.style.color = color;
+        particle.style.textShadow = `0 0 8px ${color}80`; // Beautiful glow shadow
+        particle.style.animationDuration = duration + 's';
+        particle.style.animationDelay = delay + 's';
+
+        container.appendChild(particle);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initTheoryParticles();
+    });
+  </script>
+</body>
+
+</html>
