@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cabinet+Grotesk:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cabinet+Grotesk:wght@700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap');
 
 :root {
   --bg: #fafafa;
@@ -970,7 +970,8 @@ h1 {
   flex-grow: 1;
 }
 
-.dropped-items .classify-chip {
+.dropped-items .classify-chip,
+.dropped-items .dropped-chip {
   width: 100%;
   text-align: center;
   background: rgba(0, 0, 0, 0.4);
@@ -1003,6 +1004,29 @@ h1 {
 }
 .feedback-success { color: #2dd4bf; text-shadow: 0 0 10px rgba(45,212,191,0.5); }
 .feedback-error { color: #f43f5e; text-shadow: 0 0 10px rgba(244,63,94,0.5); }
+
+/* Feedback after game 1 completion */
+.feedback-win {
+  display: block;
+  color: #2dd4bf;
+  text-shadow: 0 0 10px rgba(45,212,191,0.5);
+  background: rgba(45, 212, 191, 0.08);
+  border: 1px solid rgba(45, 212, 191, 0.25);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  animation: popIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.feedback-lose {
+  display: block;
+  color: #f43f5e;
+  text-shadow: 0 0 10px rgba(244,63,94,0.5);
+  background: rgba(244, 63, 94, 0.08);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  animation: popIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
 /* 3. GAME 2: Holographic Quiz Terminal */
 #quiz-container {
@@ -1155,6 +1179,7 @@ h1 {
   font-weight: 800;
   background: linear-gradient(135deg, #2dd4bf, #3b82f6);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
   line-height: 1;
@@ -2345,7 +2370,6 @@ footer strong {
 }
 
 .status-active-tag {
-  display: none;
   background: rgba(220, 38, 38, 0.05);
   color: var(--red);
   border: 1px solid rgba(220, 38, 38, 0.15);
