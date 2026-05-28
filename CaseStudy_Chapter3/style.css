@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cabinet+Grotesk:wght@700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap');
-
+/* //@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cabinet+Grotesk:wght@700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
 :root {
   --bg: #fafafa;
   --bg-secondary: #ffffff;
@@ -195,13 +195,22 @@ nav {
 }
 
 h1 {
-  font-family: 'Cabinet Grotesk', sans-serif;
+  font-family: "Be Vietnam Pro",
+    "Inter",
+    "Segoe UI",
+    Arial,
+    sans-serif;
   font-size: clamp(2.5rem, 5vw, 3.75rem);
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
   color: var(--text);
   letter-spacing: -0.03em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
 }
 
 .hero-sub {
@@ -295,15 +304,35 @@ h1 {
   gap: 0.4rem;
 }
 
-.section-title {
+/* .section-title {
   font-family: 'Cabinet Grotesk', sans-serif;
   font-size: 2.25rem;
   font-weight: 800;
   margin-bottom: 1rem;
   color: var(--text);
   letter-spacing: -0.02em;
-}
+} */
+.section-title {
+  font-family:
+    "Be Vietnam Pro",
+    "Inter",
+    "Segoe UI",
+    Arial,
+    sans-serif;
 
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text);
+
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+}
 .section-desc {
   color: var(--muted);
   max-width: 600px;
@@ -1597,10 +1626,20 @@ footer strong {
 }
 
 .control-title {
-  font-family: 'Cabinet Grotesk', sans-serif;
+  font-family: "Be Vietnam Pro",
+    "Inter",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
   font-size: 1.1rem;
   font-weight: 800;
   color: var(--text);
+
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
 }
 
 .select-wrapper {

@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
     extend: {
       colors: {
@@ -14,18 +15,34 @@ export default {
           white: "#ffffff",
           offwhite: "#fff9f9",
           darkred: "#b01d16",
-        }
+        },
       },
+
       fontFamily: {
-        // Đổi sang Arial và Inter để đảm bảo máy nào cũng hiển thị tiếng Việt mượt mà, không lỗi dấu
-        sans: ['Arial', 'Inter', 'system-ui', 'sans-serif'],
-        serif: ['Times New Roman', 'Lora', 'serif'],
+        sans: [
+          "Be Vietnam Pro",
+          "Inter",
+          "system-ui",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif",
+        ],
+
+        serif: [
+          "Merriweather",
+          "Times New Roman",
+          "serif",
+        ],
       },
+
       boxShadow: {
-        'red-glow': '0 0 15px rgba(218, 37, 29, 0.2)',
-        'gold-glow': '0 0 15px rgba(245, 158, 11, 0.2)',
-      }
+        "red-glow": "0 0 15px rgba(218, 37, 29, 0.2)",
+        "gold-glow": "0 0 15px rgba(245, 158, 11, 0.2)",
+      },
     },
   },
+
   plugins: [],
 }
