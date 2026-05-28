@@ -17,8 +17,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['"Be Vietnam Pro"', 'Inter', 'system-ui', 'sans-serif'],
-        serif: ['Lora', 'serif'],
+        // Đổi sang Arial và Inter để đảm bảo máy nào cũng hiển thị tiếng Việt mượt mà, không lỗi dấu
+        sans: ['Arial', 'Inter', 'system-ui', 'sans-serif'],
+        serif: ['Times New Roman', 'Lora', 'serif'],
       },
       boxShadow: {
         'red-glow': '0 0 15px rgba(218, 37, 29, 0.2)',
