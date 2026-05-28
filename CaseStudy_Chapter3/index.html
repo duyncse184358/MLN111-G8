@@ -10,6 +10,24 @@
   <link rel="stylesheet" href="style.css?v=9.1.6">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    @keyframes cyberSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(12px) scale(0.985);
+        filter: blur(2px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+      }
+    }
+    
+    .theory-tab, .game-tab {
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, color 0.2s ease !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -231,10 +249,10 @@
               <div class="pill" style="background: rgba(37, 99, 236, 0.1); color: var(--accent); margin-bottom: 0.75rem; border: none; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.6rem;">LÝ LUẬN KINH ĐIỂN</div>
               <h3 style="color: var(--accent); margin-top: 0; display: flex; align-items: center; gap: 0.5rem;"><span class="material-icons">precision_manufacturing</span> Khái niệm Sản xuất vật chất</h3>
               <p style="color: var(--text); font-size: 0.95rem; font-weight: 500; line-height: 1.6; margin-bottom: 0.5rem;">
-                Sản xuất vật chất là quá trình con người chủ động tác động vào tự nhiên, cải biến các dạng vật chất của tự nhiên nhằm tạo ra các tư liệu sản xuất và tư liệu tiêu dùng để thoả mãn nhu cầu sinh tồn và phát triển của mình.
+                Sản xuất vật chất là quá trình mà trong đó con người sử dụng công cụ lao động tác động trực tiếp hoặc gián tiếp vào tự nhiên, cải biến các dạng vật chất của giới tự nhiên để tạo ra của cải xã hội, nhằm thoả mãn nhu cầu tồn tại và phát triển của con người.
               </p>
               <span style="font-size: 0.825rem; color: var(--muted); display: block; border-top: 1px dashed var(--border); padding-top: 0.5rem; margin-top: 0.5rem;">
-                Đây là loại hình hoạt động thực tiễn cơ bản nhất, đóng vai trò quyết định đối với các hoạt động thực tiễn khác của đời sống xã hội.
+                Sản xuất vật chất là cơ sở của sự tồn tại và phát triển xã hội loài người. Xét đến cùng, không thể dùng tinh thần để giải thích đời sống tinh thần; để phát triển xã hội phải bắt đầu từ phát triển đời sống kinh tế - vật chất.
               </span>
             </div>
             <div class="theory-img-box">
@@ -243,25 +261,25 @@
           </div>
 
           <div class="structure-grid">
-            <!-- Card 1: Cơ sở trực tiếp tồn tại -->
+            <!-- Card 1: Cơ sở tồn tại xã hội loài người -->
             <div class="structural-card glow-indigo" style="border-top: 3px solid var(--accent);">
-              <h4 style="font-family: 'Space Grotesk', sans-serif; display: flex; align-items: center; gap: 0.4rem; color: var(--text);"><span class="material-icons" style="color: var(--accent);">home</span> 1. Cơ sở trực tiếp tồn tại xã hội</h4>
-              <p style="margin-bottom: 0.5rem; color: var(--text); font-weight: 700; font-size: 0.9rem;">Duy trì sự sống con người</p>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted);">Con người muốn tồn tại thì trước hết phải có các tư liệu sinh hoạt thiết yếu tối thiểu (ăn, uống, mặc, ở...). Hoạt động sản xuất vật chất trực tiếp tạo ra các tư liệu này. Nếu ngừng sản xuất vật chất, xã hội loài người không thể tồn tại và phát triển.</p>
+              <h4 style="font-family: 'Space Grotesk', sans-serif; display: flex; align-items: center; gap: 0.4rem; color: var(--text);"><span class="material-icons" style="color: var(--accent);">home</span> 1. Tiền đề trực tiếp tạo ra tư liệu sinh hoạt</h4>
+              <p style="margin-bottom: 0.5rem; color: var(--text); font-weight: 700; font-size: 0.9rem;">Duy trì sự tồn tại và phát triển</p>
+              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted);">Sản xuất vật chất tạo ra tư liệu sinh hoạt để duy trì sự sống của con người <em>(Ví dụ: Trồng trọt lúa gạo để ăn, dệt vải để mặc, xây nhà để ở)</em>. C.Mác khẳng định: <em>“Đứa trẻ nào cũng biết rằng bất kể dân tộc nào cũng sẽ diệt vong, nếu như nó ngừng lao động, không phải một năm, mà chỉ mấy tuần thôi”</em>.</p>
             </div>
 
-            <!-- Card 2: Tiền đề hoạt động xã hội khác -->
+            <!-- Card 2: Tiền đề của mọi hoạt động lịch sử của con người -->
             <div class="structural-card glow-indigo" style="border-top: 3px solid var(--accent);">
-              <h4 style="font-family: 'Space Grotesk', sans-serif; display: flex; align-items: center; gap: 0.4rem; color: var(--text);"><span class="material-icons" style="color: var(--accent);">layers</span> 2. Tiền đề các lĩnh vực đời sống</h4>
-              <p style="margin-bottom: 0.5rem; color: var(--text); font-weight: 700; font-size: 0.9rem;">Hình thành quan hệ xã hội</p>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted);">Hoạt động sản xuất vật chất là cơ sở nảy sinh các quan hệ xã hội khác như chính trị, pháp luật, đạo đức, khoa học, nghệ thuật, tôn giáo... Toàn bộ đời sống tinh thần và các thiết chế xã hội đều được hình thành trên cơ sở của sản xuất vật chất hiện thực.</p>
+              <h4 style="font-family: 'Space Grotesk', sans-serif; display: flex; align-items: center; gap: 0.4rem; color: var(--text);"><span class="material-icons" style="color: var(--accent);">layers</span> 2. Tiền đề của mọi hoạt động lịch sử</h4>
+              <p style="margin-bottom: 0.5rem; color: var(--text); font-weight: 700; font-size: 0.9rem;">Hình thành nên các quan hệ xã hội</p>
+              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted);">Sản xuất vật chất tạo ra quan hệ kinh tế - vật chất, làm nền móng nảy sinh ra chính trị, pháp luật, đạo đức, tôn giáo... <em>(Ví dụ: Việc trao đổi mua bán hàng hóa làm xuất hiện khế ước thương mại và luật pháp để quản lý)</em>. C.Mác chỉ rõ: <em>“Việc sản xuất ra những tư liệu sinh hoạt vật chất trực tiếp... tạo ra một cơ sở từ đó mà người ta phát triển các thể chế nhà nước, pháp quyền, nghệ thuật...”</em>.</p>
             </div>
 
-            <!-- Card 3: Động lực phát triển của xã hội -->
+            <!-- Card 3: Điều kiện chủ yếu sáng tạo ra bản thân con người -->
             <div class="structural-card glow-indigo" style="border-top: 3px solid var(--accent);">
-              <h4 style="font-family: 'Space Grotesk', sans-serif; display: flex; align-items: center; gap: 0.4rem; color: var(--text);"><span class="material-icons" style="color: var(--accent);">trending_up</span> 3. Động lực tiến hóa xã hội</h4>
-              <p style="margin-bottom: 0.5rem; color: var(--text); font-weight: 700; font-size: 0.9rem;">Đổi mới lực lượng sản xuất</p>
-              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted);">Trong quá trình sản xuất, con người không ngừng cải tiến công cụ lao động, tích lũy kinh nghiệm, hoàn thiện kỹ năng. Sự thay đổi và phát triển của lực lượng sản xuất vật chất thúc đẩy phương thức sản xuất tiến hóa, kéo theo toàn bộ lịch sử loài người phát triển từ thấp đến cao.</p>
+              <h4 style="font-family: 'Space Grotesk', sans-serif; display: flex; align-items: center; gap: 0.4rem; color: var(--text);"><span class="material-icons" style="color: var(--accent);">trending_up</span> 3. Sáng tạo ra bản thân con người</h4>
+              <p style="margin-bottom: 0.5rem; color: var(--text); font-weight: 700; font-size: 0.9rem;">Lao động sáng tạo con người</p>
+              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--muted);">Thông qua lao động sản xuất, con người tự tách khỏi tự nhiên, hình thành nên ngôn ngữ, nhận thức, tư duy và đạo đức <em>(Ví dụ: Nhờ chế tạo và sử dụng các công cụ lao động như rìu đá, cung tên mà bàn tay và não bộ con người phát triển hoàn thiện)</em>. Ph.Ăngghen khẳng định: <em>“lao động đã sáng tạo ra bản thân con người”</em>.</p>
             </div>
           </div>
         </div>
@@ -657,128 +675,92 @@
         </div>
 
         <!-- Initial Placeholder before Check/Apply (Initially visible) -->
-        <div class="simulator-status-placeholder" id="simulator-status-placeholder"
-          style="margin: 1.5rem 3rem 3rem; padding: 2.25rem; border: 1px dashed var(--border); border-radius: 12px; text-align: center; background: rgba(255, 255, 255, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--shadow-sm); transition: all 0.4s ease;">
-          <span class="material-icons"
-            style="font-size: 2.75rem; color: var(--accent); margin-bottom: 0.75rem; display: inline-block; animation: pulseGlow 2s infinite;">analytics</span>
-          <h4
-            style="font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 800; color: var(--text); letter-spacing: 0.02em; margin: 0;">
-            HỆ THỐNG CHỜ PHÂN TÍCH THÍCH ỨNG BIỆN CHỨNG</h4>
-          <p
-            style="font-size: 0.8rem; color: var(--muted); max-width: 520px; margin: 0.65rem auto 0; line-height: 1.6;">
-            Hãy chọn một mô hình cấy ghép ở trên, sau đó nhấn nút <strong style="color: var(--accent);">"KIỂM TRA THÍCH
-              ỨNG"</strong> hoặc <strong style="color: var(--accent);">"ÁP DỤNG"</strong> để chẩn đoán quy luật QHSX
-            tương thích với LLSX và mở khóa kết quả hiệu năng chi tiết.</p>
+        <div id="simulator-status-placeholder" class="simulator-status-placeholder">
+          <div class="placeholder-content" style="text-align: center; padding: 2rem; background: rgba(99, 102, 241, 0.03); border: 1px dashed rgba(99, 102, 241, 0.2); border-radius: 8px; margin-top: 1.5rem;">
+            <span class="material-icons animate-pulse" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem; display: inline-block;">science</span>
+            <h3 style="margin: 0.5rem 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--text);">Hệ thống chẩn đoán sẵn sàng</h3>
+            <p style="color: var(--muted); margin: 0; font-size: 0.9rem;">Vui lòng chọn một mô hình văn hóa doanh nghiệp ở trên và bấm <strong>ÁP DỤNG</strong> để bắt đầu phân tích tương thích biện chứng.</p>
+          </div>
         </div>
 
-        <!-- Bottom status notification bar (Initially hidden) -->
-        <div class="simulator-status-bar" id="simulator-status"
-          style="display: none; animation: slideDownReport 0.5s ease forwards;">
-          <div class="status-header">
-            <div class="status-indicator-dot" id="status-indicator-dot"></div>
-            <h4 class="status-title-text" id="status-title-text">HỆ THỐNG ĐANG HOẠT ĐỘNG BÌNH THƯỜNG</h4>
+        <!-- Simulator Diagnostic Status Results (Initially Hidden) -->
+        <div id="simulator-status" class="simulator-status" style="display: none; margin-top: 1.5rem; padding: 1.5rem; background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.15); border-radius: 8px;">
+          <div class="status-header" style="margin-bottom: 1.25rem;">
+            <h3 id="status-title-text" style="margin: 0 0 0.5rem 0; font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 1.1rem; color: var(--accent);">HỆ THỐNG ĐANG HOẠT ĐỘNG BÌNH THƯỜNG</h3>
+            <p id="status-desc-text" style="margin: 0; color: var(--text); font-size: 0.9rem; line-height: 1.6;">Quy chế kỷ luật và ca kíp ca 3 liên hoàn phù hợp hoàn hảo với Lực lượng sản xuất.</p>
           </div>
+          
+          <div class="metrics-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; padding-top: 1rem; border-top: 1px dashed rgba(226, 232, 240, 0.2);">
+            <div class="metric-item">
+              <div class="metric-header" style="display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text);">
+                <span class="metric-label">ĐỘ PHÙ HỢP BIỆN CHỨNG (QHSX - LLSX)</span>
+                <span id="metric-fit-val" class="metric-val text-green">100% (Phù hợp hoàn hảo)</span>
+              </div>
+              <div class="metric-bar-bg" style="height: 6px; background: rgba(226, 232, 240, 0.1); border-radius: 3px; overflow: hidden;">
+                <div id="metric-fit" class="metric-bar-fill" style="width: 100%; height: 100%; background: var(--green); transition: width 0.5s ease;"></div>
+              </div>
+            </div>
 
-          <div class="status-content">
-            <p class="status-desc" id="status-desc-text">
-              Quy chế kỷ luật và ca kíp ca 3 liên hoàn phù hợp hoàn hảo với Lực lượng sản xuất (dây chuyền lò nung bán
-              tự động). Quy trình sản xuất diễn ra trơn tru, năng suất ổn định.
+            <div class="metric-item">
+              <div class="metric-header" style="display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text);">
+                <span class="metric-label">HIỆU SUẤT VẬN HÀNH DÂY CHUYỀN</span>
+                <span id="metric-efficiency-val" class="metric-val text-green">100% (Tối đa)</span>
+              </div>
+              <div class="metric-bar-bg" style="height: 6px; background: rgba(226, 232, 240, 0.1); border-radius: 3px; overflow: hidden;">
+                <div id="metric-efficiency" class="metric-bar-fill" style="width: 100%; height: 100%; background: var(--green); transition: width 0.5s ease;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- ends dialectic-simulator card -->
+
+      <div class="timeline" style="margin-top: 4rem;">
+        <!-- Giai đoạn 1 -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content" style="background: var(--bg-secondary); border-color: var(--border);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+              <h4 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 700; color: var(--text);">
+                Giai đoạn 1: Nhà máy gạch hoạt động ổn định (Cách quản lý cũ)
+              </h4>
+              <span class="badge" style="background: rgba(22, 163, 74, 0.1); color: var(--green); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 700;">HỆ THỐNG ỔN ĐỊNH</span>
+            </div>
+            <p style="color: var(--muted); line-height: 1.6; margin: 0.5rem 0 0; font-size: 0.875rem;">
+              <strong>Lò nung cháy đều, gạch ra lò đẹp:</strong> Lực lượng sản xuất (LLSX) là cái lò nung gạch thủ công rất nóng và thô sơ, bắt buộc phải có người canh liên tục để giữ nhiệt độ. Quan hệ sản xuất (QHSX) tương ứng là quy định chia 3 ca làm việc nghiêm túc, chấm công vân tay chặt chẽ. Cách quản lý này giống như "chiếc áo vừa vặn" với nhà máy gạch thủ công, giúp lò nung luôn đỏ lửa, gạch ra lò đạt chất lượng 100%, không bị hỏng hóc dù công việc rất vất vả.
             </p>
-
-            <div class="status-metrics">
-              <div class="metric-item">
-                <div class="metric-meta">
-                  <span class="metric-label">Tính phù hợp Biện chứng (LLSX vs QHSX)</span>
-                  <span class="metric-val text-green" id="metric-fit-val">100% (Phù hợp hoàn hảo)</span>
-                </div>
-                <div class="metric-track">
-                  <div class="metric-fill bg-green" id="metric-fit" style="width: 100%;"></div>
-                </div>
-              </div>
-
-              <div class="metric-item">
-                <div class="metric-meta">
-                  <span class="metric-label">Hiệu suất và Năng suất sản xuất</span>
-                  <span class="metric-val text-green" id="metric-efficiency-val">100% (Tối đa)</span>
-                </div>
-                <div class="metric-track">
-                  <div class="metric-fill bg-green" id="metric-efficiency" style="width: 100%;"></div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </div>
 
-      <!-- TIMELINE DIỄN BIẾN CASE STUDY -->
-      <div class="card" style="margin-top: 3rem; margin-bottom: 3rem;">
-        <h3
-          style="margin-bottom: 2rem; font-family: 'Cabinet Grotesk', sans-serif; font-size: 1.5rem; color: var(--accent); display: flex; align-items: center; gap: 0.6rem; letter-spacing: -0.02em;">
-          <span class="material-icons" style="color: var(--accent);">timeline</span> Dòng thời gian Diễn biến Case Study
-        </h3>
-
-        <div class="timeline">
-          <!-- Giai đoạn 1 -->
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-content" style="background: var(--bg-secondary); border-color: var(--border);">
-              <div
-                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
-                <h4 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 700; color: var(--text);">
-                  Giai đoạn 1: Trạng thái sản xuất ổn định (Truyền thống)
-                </h4>
-                <span class="badge"
-                  style="background: rgba(22, 163, 74, 0.1); color: var(--green); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 700;">HỆ
-                  THỐNG ỔN ĐỊNH</span>
-              </div>
-              <p style="color: var(--muted); line-height: 1.6; margin: 0.5rem 0 0; font-size: 0.875rem;">
-                Lực lượng sản xuất (LLSX) là lò nung gạch cơ khí thủ công, đòi hỏi tính kỷ luật ca kíp 3 ca liên tục cực
-                kỳ đồng bộ. Quan hệ sản xuất (QHSX) tương ứng lúc này là phân công ca kíp cố định, giám sát trực tiếp và
-                kỷ luật chặt chẽ. Hệ thống vận hành trơn tru, năng suất đạt 100% dù điều kiện lao động nặng nhọc.
-              </p>
+        <!-- Giai đoạn 2 -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content" style="background: var(--bg-secondary); border-color: var(--border);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+              <h4 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 700; color: var(--text);">
+                Giai đoạn 2: Ban giám đốc cải tổ "nửa mùa" (Cấy ghép tự do kiểu Google)
+              </h4>
+              <span class="badge" style="background: rgba(37, 99, 236, 0.1); color: var(--accent); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 700;">CẤY GHÉP DUY Ý CHÍ</span>
             </div>
+            <p style="color: var(--muted); line-height: 1.6; margin: 0.5rem 0 0; font-size: 0.875rem;">
+              <strong>Áp dụng văn hóa tự do sai chỗ (Cấy ghép lệch pha):</strong> Ban Giám đốc đi học tập ở nước ngoài về, muốn đổi mới nên bỏ chấm công vân tay, cho công nhân lò nung tự do đi làm linh hoạt giờ giấc như nhân viên văn phòng Google. Triết học gọi đây là sai lầm <strong>duy ý chí</strong> (ảo tưởng chủ quan): mang cách quản lý tự do của văn phòng máy lạnh (QHSX mới) áp đặt vào những người công nhân xúc than nung gạch thủ công (LLSX thô sơ). Chiếc áo quá rộng và lạc tông khiến tính đồng bộ ca kíp bị phá vỡ hoàn toàn.
+            </p>
           </div>
+        </div>
 
-          <!-- Giai đoạn 2 -->
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-content" style="background: var(--bg-secondary); border-color: var(--border);">
-              <div
-                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
-                <h4 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 700; color: var(--text);">
-                  Giai đoạn 2: Áp dụng văn hóa tự do kiểu Google
-                </h4>
-                <span class="badge"
-                  style="background: rgba(37, 99, 236, 0.1); color: var(--accent); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 700;">CẤY
-                  GHÉP DUY Ý CHÍ</span>
-              </div>
-              <p style="color: var(--muted); line-height: 1.6; margin: 0.5rem 0 0; font-size: 0.875rem;">
-                Nhà quản trị quyết định cấy ghép mô hình văn hóa tự do sáng tạo kiểu Google (bỏ chấm công vân tay, nới
-                lỏng kỷ luật). Đây là việc áp đặt một Kiến trúc thượng tầng (KTTT) và QHSX phi tập trung vượt trước
-                trình độ hiện thực của LLSX cơ khí nặng, làm mất đi tính đồng bộ thiết yếu trong vận hành lò nung.
-              </p>
+        <!-- Giai đoạn 3 -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content" style="background: var(--bg-secondary); border-color: var(--border);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+              <h4 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 700; color: var(--text);">
+                Giai đoạn 3: Hậu quả đứt gãy sản xuất
+              </h4>
+              <span class="badge" style="background: rgba(220, 38, 38, 0.1); color: var(--red); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 700;">XUNG ĐỘT BIỆN CHỨNG</span>
             </div>
-          </div>
-
-          <!-- Giai đoạn 3 -->
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-content" style="background: var(--bg-secondary); border-color: var(--border);">
-              <div
-                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
-                <h4 style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 700; color: var(--text);">
-                  Giai đoạn 3: Sự cố lò nung & Đứt gãy sản xuất
-                </h4>
-                <span class="badge"
-                  style="background: rgba(220, 38, 38, 0.1); color: var(--red); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 700;">XUNG
-                  ĐỘT BIỆN CHỨNG</span>
-              </div>
-              <p style="color: var(--muted); line-height: 1.6; margin: 0.5rem 0 0; font-size: 0.875rem;">
-                Công nhân sao lãng ca kíp, lò nung bị sốc nhiệt độ do không có sự phối hợp chặt chẽ giữa các khâu. Tỷ lệ
-                gạch lỗi tăng vọt lên 50%, thiết bị hư hỏng, công nhân mệt mỏi và chán nản. Mâu thuẫn biện chứng sâu sắc
-                giữa LLSX và QHSX bùng nổ, dẫn đến sự sụp đổ dây chuyền sản xuất của nhà máy.
-              </p>
-            </div>
+            <p style="color: var(--muted); line-height: 1.6; margin: 0.5rem 0 0; font-size: 0.875rem;">
+              <strong>Lò nguội, gạch vỡ, nhà máy sụp đổ:</strong> Được tự do giờ giấc, công nhân đi làm lệch ca, không có ai bàn giao lò đúng giờ. Lò nung gạch không được giữ nhiệt đều đặn bị sốc nhiệt đột ngột. Hậu quả là gạch nứt vỡ hỏng tới 50%, lò nung nứt toác, máy móc hư hại nghiêm trọng. Mâu thuẫn gay gắt giữa cách quản lý quá lỏng lẻo (QHSX mới) và cái lò nung thủ công thô sơ (LLSX cũ) bùng nổ, khiến toàn bộ nhà máy bị đứt gãy sản xuất và sụp đổ hoàn toàn.
+            </p>
           </div>
         </div>
       </div>
@@ -1136,7 +1118,18 @@
         theoryTabs.forEach(t => t.classList.remove('active'));
         theoryPanels.forEach(p => p.classList.remove('active'));
         tab.classList.add('active');
-        document.getElementById(tab.dataset.target).classList.add('active');
+        
+        const targetPanel = document.getElementById(tab.dataset.target);
+        targetPanel.classList.add('active');
+        
+        // Reset and trigger beautiful cyberpunk unblur slide-in animation
+        targetPanel.style.animation = 'none';
+        void targetPanel.offsetWidth; // Force CSS reflow
+        targetPanel.style.animation = 'cyberSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+        
+        // Dynamic press feedback
+        tab.style.transform = 'scale(0.95)';
+        setTimeout(() => { tab.style.transform = 'scale(1)'; }, 150);
       });
     });
 
@@ -1148,7 +1141,18 @@
         gameTabs.forEach(t => t.classList.remove('active'));
         gamePanels.forEach(p => p.classList.remove('active'));
         tab.classList.add('active');
-        document.getElementById(tab.dataset.target).classList.add('active');
+        
+        const targetPanel = document.getElementById(tab.dataset.target);
+        targetPanel.classList.add('active');
+        
+        // Reset and trigger transition animation
+        targetPanel.style.animation = 'none';
+        void targetPanel.offsetWidth; // Force CSS reflow
+        targetPanel.style.animation = 'cyberSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+        
+        // Dynamic press feedback
+        tab.style.transform = 'scale(0.95)';
+        setTimeout(() => { tab.style.transform = 'scale(1)'; }, 150);
       });
     });    // ── INTERACTIVE DIALECTICAL SIMULATOR ──
     const selectCulture = document.getElementById('select-culture');
