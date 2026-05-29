@@ -442,6 +442,7 @@ h1 {
   align-items: center;
   gap: 0.6rem;
   letter-spacing: -0.01em;
+
 }
 
 .theory-header-box p {
@@ -1865,11 +1866,21 @@ footer strong {
 }
 
 .panel-title {
-  font-family: 'Cabinet Grotesk', sans-serif;
+  font-family: "Be Vietnam Pro",
+    "Inter",
+    "Segoe UI",
+    Arial,
+    sans-serif;;
   font-size: 1.15rem;
   font-weight: 800;
   color: var(--text);
   margin-top: 0.15rem;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+
 }
 
 .badge {
